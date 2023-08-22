@@ -3,7 +3,8 @@
 
 title: Curso Programación I
 author: Joshua Bernal & Ricardo Ortega
-logo: logo.png
+logo: content/imgs/logo.png
+year: "2023"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
