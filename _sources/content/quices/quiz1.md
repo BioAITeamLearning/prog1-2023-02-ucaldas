@@ -14,8 +14,6 @@ kernelspec:
 
 Evaluemos lo aprendido en la Clase 1 y Clase 2
 
-::::{card-carousel} 1
-
 :::{card}
 :margin: 3
 :class-body: text-center
@@ -29,6 +27,5 @@ Evaluemos lo aprendido en la Clase 1 y Clase 2
 
 Quiz 1: Clase 1 y Clase 2
 +++
-Explore this book {fas}`arrow-right`
+[Click para ir al Quiz](https://docs.google.com/forms/d/e/1FAIpQLSfSbe4E_EylsF--aPQyoSvH8HCCI9BRro2MqTAmCDteOWZ4uw/viewform?usp=sf_link) {fas}`arrow-right`
 :::
-::::

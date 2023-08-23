@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/talleres/taller2';</script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
@@ -393,7 +395,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -409,6 +413,25 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-datos-y-sistemas-numericos">Tipos de Datos y Sistemas Numéricos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -420,6 +443,202 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="taller-2">
 <h1>Taller 2<a class="headerlink" href="#taller-2" title="Permalink to this heading">#</a></h1>
+<section id="tipos-de-datos-y-sistemas-numericos">
+<h2>Tipos de Datos y Sistemas Numéricos<a class="headerlink" href="#tipos-de-datos-y-sistemas-numericos" title="Permalink to this heading">#</a></h2>
+<p>Programación I</p>
+<p>Reinel Tabares Soto</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Este Taller debe entregarse en formato <code class="docutils literal notranslate"><span class="pre">docx</span></code>, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto, a partir del Taller 3 deben entregarse desde Colaboratory, con un enlace con los permisos en público o el notebook adjunto, mil gracias.</p>
+</div>
+<section id="ejercicio-1">
+<h3>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h3>
+<p>¿Cuáles son los datos primitivos de Java? ¿Cuál es su tamaño en bytes y cuál es su rango?</p>
+</section>
+<section id="ejercicio-2">
+<h3>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h3>
+<p>Declare los siguientes datos según la sintaxis de Java.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3
+4.55
+4456429001490
+9.678231567845
+A
+true
+P
+</pre></div>
+</div>
+</section>
+<section id="ejercicio-3">
+<h3>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h3>
+<p>Convierta los siguientes números binarios a números decimales (debe mostrarse todo el proceso):</p>
+<div class="math notranslate nohighlight">
+\[
+110101100_2 \newline
+10111111_2 \newline
+1011001100_2 \newline
+\]</div>
+</section>
+<section id="ejercicio-4">
+<h3>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this heading">#</a></h3>
+<p>Convierta los siguientes números decimales a números binarios (debe mostrarse todo el proceso):</p>
+<div class="math notranslate nohighlight">
+\[
+345_{10} \newline
+501_{10} \newline
+479_{10} \newline
+\]</div>
+</section>
+<section id="ejercicio-5">
+<h3>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this heading">#</a></h3>
+<p>Escriba diez (10) nombres de variables válidos (al menos 5 nombres deben contener números, guión bajo y/o letras mayúsculas). Consultar buenas prácticas para definir variables en un lenguaje de programación.</p>
+</section>
+<section id="ejercicio-6">
+<h3>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this heading">#</a></h3>
+<p>El sistema de numeración binario (o en base 2), con el que trabajan los ordenadores, en lugar de contar con las cifras del 0 al 9, sólo contempla dos cifras: el 0 y el 1. Y sólo con ellas se deben representar todos los valores. Veamos la siguiente tabla:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sistema Decimal</p></th>
+<th class="head"><p>Sistema Binario</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>↓</strong></p></td>
+<td><p><strong>1 bit</strong></p></td>
+<td><p><strong>2 bits</strong></p></td>
+<td><p><strong>3 bits</strong></p></td>
+<td><p><strong>4 bits</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>00</p></td>
+<td><p>000</p></td>
+<td><p>0000</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>01</p></td>
+<td><p>001</p></td>
+<td><p>0001</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p></p></td>
+<td><p>10</p></td>
+<td><p>010</p></td>
+<td><p>0010</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p></p></td>
+<td><p>11</p></td>
+<td><p>011</p></td>
+<td><p>0011</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>100</p></td>
+<td><p>0100</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>101</p></td>
+<td><p>0101</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>110</p></td>
+<td><p>0110</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>111</p></td>
+<td><p>0111</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1000</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>1001</p></td>
+</tr>
+</tbody>
+</table>
+<p>Como puede verse, los números del sistema decimal son representados por cifras que sólo contienen los dígitos <span class="math notranslate nohighlight">\(0\)</span> y <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p>Con un (1) solo bit sólo podemos indicar el valor de <span class="math notranslate nohighlight">\(0\)</span> o de <span class="math notranslate nohighlight">\(1\)</span>. Pero con dos (2) bits de información podemos hacer hasta cuatro combinaciones (<span class="math notranslate nohighlight">\(00\)</span>, <span class="math notranslate nohighlight">\(01\)</span>, <span class="math notranslate nohighlight">\(10\)</span>, <span class="math notranslate nohighlight">\(11\)</span>). Con tres (3) bits se pueden representar hasta ocho valores (<span class="math notranslate nohighlight">\(000\)</span>, <span class="math notranslate nohighlight">\(001\)</span>, <span class="math notranslate nohighlight">\(010\)</span>, <span class="math notranslate nohighlight">\(011\)</span>, <span class="math notranslate nohighlight">\(100\)</span>, <span class="math notranslate nohighlight">\(101\)</span>, <span class="math notranslate nohighlight">\(110\)</span>, <span class="math notranslate nohighlight">\(111\)</span>).</p>
+<p>La fórmula para determinar la cantidad de valores que pueden representarse con n bits es <span class="math notranslate nohighlight">\(2^{nbits}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+1 \hspace{0.1cm} bit \rightarrow  (2^1) =	2 \hspace{0.1cm} valores \newline
+2 \hspace{0.1cm} bits  \rightarrow  (2^2) = 4 \hspace{0.1cm} valores \newline
+3 \hspace{0.1cm} bits  \rightarrow  (2^3) = 8 \hspace{0.1cm} valores \newline
+\]</div>
+<p>Información tomada de <a class="reference external" href="http://cv.uoc.edu/UOC/a/moduls/90/90_574b/web/main/m1/c1/4.html">¿Qué es digital? – El código en base 2</a></p>
+<p>Según la lectura anterior, cuántos bits necesitamos para representar los siguientes valores (debe mostrar todas las operaciones y/o pasos):</p>
+<div class="math notranslate nohighlight">
+\[
+255\newline
+15\newline
+1880\newline
+1450322\newline
+990999\newline
+4004237116\newline
+\]</div>
+<p>¿Cuántos valores puedo representar con los siguientes bits?</p>
+<div class="math notranslate nohighlight">
+\[
+5 \hspace{0.1cm} bits\newline
+10 \hspace{0.1cm} bits\newline
+50 \hspace{0.1cm} bits\newline
+100 \hspace{0.1cm} bits\newline
+\]</div>
+</section>
+<section id="ejercicio-7">
+<h3>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permalink to this heading">#</a></h3>
+<p>Construya el número 2340 en base 10. Recuerde respetar las posiciones correspondientes.</p>
+</section>
+<section id="ejercicio-8">
+<h3>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this heading">#</a></h3>
+<p>Consultar como sumar, restar, multiplicar y dividir en binario y hexadecimal y hacer ejemplos.</p>
+</section>
+<section id="ejercicio-9">
+<h3>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this heading">#</a></h3>
+<p>De las siguientes afirmaciones ¿cuál es falsa y cuál verdadera? Escriba en el recuadro de la derecha una <strong>F</strong> (falsa) o una <strong>V</strong> (verdadera).</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Enunciado</p></th>
+<th class="head"><p>Respuesta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Puedo sumar datos de tipo carácter (<code class="docutils literal notranslate"><span class="pre">char</span></code>)</p></td>
+<td><p>___</p></td>
+</tr>
+<tr class="row-odd"><td><p>Puedo guardar un número celular en una variable de tipo <code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>___</p></td>
+</tr>
+<tr class="row-even"><td><p>En un dato de tipo <code class="docutils literal notranslate"><span class="pre">char</span></code> puedo almacenar la palabra Chorizo</p></td>
+<td><p>___</p></td>
+</tr>
+<tr class="row-odd"><td><p>Un dato booleano me puede ayudar a validar una operación o actividad</p></td>
+<td><p>___</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">long</span></code> e <code class="docutils literal notranslate"><span class="pre">int</span></code> son idénticos</p></td>
+<td><p>___</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -480,6 +699,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-datos-y-sistemas-numericos">Tipos de Datos y Sistemas Numéricos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5">Ejercicio 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6">Ejercicio 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7">Ejercicio 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8">Ejercicio 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-9">Ejercicio 9</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
