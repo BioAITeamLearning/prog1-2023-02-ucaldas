@@ -1,28 +1,19 @@
-# Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 title: Curso Programación I
 author: Joshua Bernal & Ricardo Ortega
 logo: content/imgs/logo.png
-year: "2023"
+copyright: "2023"
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: off
 
-# Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
 
-# Information about where the book exists on the web
 repository:
-  url: https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas  # Online location of your book
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas
+  branch: master
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
@@ -39,3 +30,7 @@ parse:
     - html_admonition
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
   myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+
+sphinx:
+  config:
+    language: es
