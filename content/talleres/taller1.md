@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Taller 1
+# 📄 Taller 1
 
 ## Pseudocódigo y Diagramas de Flujo
 Programación I
