@@ -20,18 +20,14 @@ kernelspec:
 
 ## Algoritmos
 
----
 
 ## Tipos de Lenguajes
 
----
 
 ## Historia de la Programación
 
----
 
 ## Lógica de Programación
 
----
 
 ## Pseudocódigo y Diagramas de Flujo

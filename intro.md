@@ -46,11 +46,6 @@
 :::
 ::::
 
-
-:::{grid-item}
-:columns: 8
-:class: sd-fs-7
-
 Facultad de ingeniería, Ingeniería de Sistemas
 
 **Ph. D. Reinel Tabares Soto**
@@ -67,8 +62,6 @@ Facultad de ingeniería, Ingeniería de Sistemas
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/2048px-ORCID_iD.svg.png" width="20" height="20">](https://orcid.org/0000-0002-4978-5211)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="20" height="20">](https://www.researchgate.net/profile/Reinel-Tabares-Soto)
 ```
-
-:::
 
 ---
 
