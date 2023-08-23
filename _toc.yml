@@ -12,7 +12,7 @@ parts:
     - file: content/resources/clase-1/recursos-clase1
     - file: content/talleres/taller1
   - file: content/Unidad2
-  sections:
+    sections:
     - file: content/notebooks/Clase2
     - file: content/resources/clase-2/recursos-clase2
     - file: content/talleres/taller2
