@@ -17,7 +17,7 @@ kernelspec:
 <div class="admonition" style="background: lightblue; padding: 10px">
     <p class="title">Lectura Obligatoria</p>
     <p>Realizar la lectura del Capitulo 1 del libro 'Introducción a la Programación. Lógica y Diseño'.</p>
-    <a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/libros/Introduccion-a-la-programacion-logica-y-diseño-Cap1.pdf">Accede al capitulo aqui</a>
+    <a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/libros/Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf" download="Introduccion-a-la-programacion-logica-y-diseno-Cap1.pdf">Accede al capitulo aqui</a>
 </div>
 
 ## Recursos
@@ -41,5 +41,5 @@ Descarga el software PSeInt donde puedes crear pseudocodigo y diagramas de flujo
 :::{card} 🔵 Ejemplos PSeInt
 Accede a ejemplos de PSeInt
 
-[Enlace a la carpeta](https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/content/resources/clase-1/Ejemplos-PSeInt)
+[Enlace a la carpeta](https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/tree/41066861c56e17b0ce22b9724b602a8067bd0261/content/resources/clase-1/Ejemplos-PSeInt)
 :::
