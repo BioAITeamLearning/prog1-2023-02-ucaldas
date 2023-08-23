@@ -32,51 +32,29 @@ El curso PROGRAMACIÓN I presenta, las herramientas necesarias para llegar a la 
 
 Antes de enfatizar en el manejo de un lenguaje de programación como tal, es importante conocer elementos que ayuden a desarrollar la lógica algorítmica, de tal manera que posteriormente se facilite el manejo de las herramientas de programación.
 
-## Hola Mundo
-
-```html
-<div class="admonition tip dropdown" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title">Click para ver Diapositivas</p>
-<p>PDF</p>
-<iframe src="https://docs.google.com/viewer?url=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/area-prog.pptx&embedded=true" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<p>Presentación</p>
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/area-prog.pptx" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-</div>
-```
-
 ## Área de Programación
 
 Plan de estudios Ingeniería de Sistemas y Computación
 
-:::{admonition} Click para ver Diapositivas
-:class: tip, dropdown
-
-PDF
-
-<iframe src="https://docs.google.com/viewer?url=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/area-prog.pptx&embedded=true" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-Presentación
-
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/area-prog.pptx" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-
-:::
+<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
+    <p class="title">Click para ver Diapositivas</p>
+    PDF
+    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/area-prog.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    Presentación
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/area-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</div>
 
 ## Información del Curso
 
 *Programación I - G8F0052*
 
-:::{admonition} Click para ver Diapositivas
-:class: tip, dropdown
-
-PDF
-
-<iframe src="https://docs.google.com/viewer?url=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/info-prog.pptx&embedded=true" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-Presentación
-
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/info-prog.pptx" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-
-:::
+<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
+    <p class="title">Click para ver Diapositivas</p>
+    PDF
+    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/info-prog.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    Presentación
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/info-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</div>
 
 
 ## Forma de Trabajo
@@ -98,12 +76,12 @@ Presentación
 
 Porcentajes de Pariciales, Quices y Talleres
 
-:::{admonition} Click para ver Diapositivas
-:class: tip, dropdown
-<p> PDF </p>
-<iframe src="https://docs.google.com/viewer?url=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/porcentajes.pptx&embedded=true" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<p> Presentación </p>
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/Ricardo-OB/exp.prog.1/raw/master/content/resources/clase-1/porcentajes.pptx" frameborder="1" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-:::
+<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
+    <p class="title">Click para ver Diapositivas</p>
+    PDF
+    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    Presentación
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</div>
 
 
