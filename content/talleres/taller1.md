@@ -12,7 +12,7 @@ kernelspec:
 
 # Taller 1
 
-## Pseudocódigo y diagramas de flujo
+## Pseudocódigo y Diagramas de Flujo
 Programación I
 
 Reinel Tabares Soto
