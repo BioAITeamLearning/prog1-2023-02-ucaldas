@@ -23,7 +23,7 @@ kernelspec:
 </div>
 
 :::{note}
-Puedes acceder al notebook en la siguiente página (*Datos y Variables*)
+Puedes acceder al notebook en la siguiente página (*Tipos de Datos y Variables*)
 :::
 
 ## Sistemas de Numeración
@@ -48,7 +48,7 @@ Puedes acceder al notebook en la siguiente página (*Datos y Variables*)
 </div>
 
 :::{note}
-Puedes acceder al notebook en la siguiente página (*Datos y Variables*)
+Puedes acceder al notebook en la siguiente página (*Tipos de Datos y Variables*)
 :::
 
 ## Entornos y Lenguajes de Programación
@@ -77,7 +77,4 @@ Puedes acceder al notebook en la siguiente página (*Datos y Variables*)
 :::{warning} La presentación completa es temporal
 :::
 
-<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
-    <p class="title">Click para ver Diapositivas</p>
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRgHgVf4d8LAK7MsFPJbsn6_T20-xV-_rsbGPr7ypQHs_WoBQcN3WUqVTL9ayor4g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRgHgVf4d8LAK7MsFPJbsn6_T20-xV-_rsbGPr7ypQHs_WoBQcN3WUqVTL9ayor4g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
