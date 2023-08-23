@@ -50,11 +50,11 @@ Facultad de ingeniería, Ingeniería de Sistemas
 
 **Ph. D. Reinel Tabares Soto**
 
-* Ingeniero Electrónico -  Universidad Nacional de Colombia
-* Ingeniero de Sistemas - Universidad de Caldas
-* Magister en Automatización Industrial - Universidad Nacional de Colombia
-* Especialista en Deep Learning - DeepLearning.AI
-* Doctor en Ingeniería - Universidad Autónoma de Manizales
+- Ingeniero Electrónico -  Universidad Nacional de Colombia
+- Ingeniero de Sistemas - Universidad de Caldas
+- Magister en Automatización Industrial - Universidad Nacional de Colombia
+- Especialista en Deep Learning - DeepLearning.AI
+- Doctor en Ingeniería - Universidad Autónoma de Manizales
 
 ```{only} html
 [![](https://img.shields.io/github/stars/executablebooks/jupyter-book?style=social)](https://github.com/BioAITeamLearning)
