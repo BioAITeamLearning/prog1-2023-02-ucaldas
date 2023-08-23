@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Taller 2
+# 📄 Taller 2
 
 ## Tipos de Datos y Sistemas Numéricos
 Programación I
@@ -40,8 +40,8 @@ Declare los siguientes datos según la sintaxis de Java.
 Convierta los siguientes números binarios a números decimales (debe mostrarse todo el proceso):
 
 $$
-110101100_2 \newline
-10111111_2 \newline
+110101100_2 \newline\\*
+10111111_2 \newline\\*
 1011001100_2 \newline
 $$
 
@@ -50,8 +50,8 @@ $$
 Convierta los siguientes números decimales a números binarios (debe mostrarse todo el proceso):
 
 $$
-345_{10} \newline
-501_{10} \newline
+345_{10} \newline\\*
+501_{10} \newline\\*
 479_{10} \newline
 $$
 
@@ -82,8 +82,8 @@ Con un (1) solo bit sólo podemos indicar el valor de $0$ o de $1$. Pero con dos
 La fórmula para determinar la cantidad de valores que pueden representarse con n bits es $2^{nbits}$
 
 $$
-1 \hspace{0.1cm} bit \rightarrow  (2^1) =	2 \hspace{0.1cm} valores \newline
-2 \hspace{0.1cm} bits  \rightarrow  (2^2) = 4 \hspace{0.1cm} valores \newline
+1 \hspace{0.1cm} bit \rightarrow  (2^1) =	2 \hspace{0.1cm} valores \newline\\*
+2 \hspace{0.1cm} bits  \rightarrow  (2^2) = 4 \hspace{0.1cm} valores \newline\\*
 3 \hspace{0.1cm} bits  \rightarrow  (2^3) = 8 \hspace{0.1cm} valores \newline
 $$
 
@@ -92,20 +92,20 @@ Información tomada de [¿Qué es digital? – El código en base 2](http://cv.u
 Según la lectura anterior, cuántos bits necesitamos para representar los siguientes valores (debe mostrar todas las operaciones y/o pasos):
 
 $$
-255\newline
-15\newline
-1880\newline
-1450322\newline
-990999\newline
+255\newline\\*
+15\newline\\*
+1880\newline\\*
+1450322\newline\\*
+990999\newline\\*
 4004237116\newline
 $$
 
 ¿Cuántos valores puedo representar con los siguientes bits?
 
 $$
-5 \hspace{0.1cm} bits\newline
-10 \hspace{0.1cm} bits\newline
-50 \hspace{0.1cm} bits\newline
+5 \hspace{0.1cm} bits\newline\\*
+10 \hspace{0.1cm} bits\newline\\*
+50 \hspace{0.1cm} bits\newline\\*
 100 \hspace{0.1cm} bits\newline
 $$
 

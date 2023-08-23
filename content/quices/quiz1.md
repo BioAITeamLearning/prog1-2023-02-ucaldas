@@ -10,12 +10,15 @@ kernelspec:
   name: python3
 ---
 
-# Quiz 1
+# 🔨 Quiz 1
+
+<div>
+    <p style="color:white">---------------------------------------------------------------------------------------------------------------------------------------------</p>
+</div>
 
 Evaluemos lo aprendido en la Clase 1 y Clase 2
 
 :::{card}
-:margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
 :link: asa
