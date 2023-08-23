@@ -12,5 +12,5 @@ parts:
   chapters:
   - file: content/Unidad1
     sections:
-    - file: content/graf
+    - file: content/taller1
   - file: content/Unidad2

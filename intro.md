@@ -76,7 +76,10 @@ Facultad de ingeniería, Ingeniería de Sistemas
 
 Proporcionar los conceptos, fundamnetos y conocimientos necesarios para iniciar en el munndo de la programación; se proporcionará al estudiante material de apoyo y los fundamentos esenciales para que sea capaz de resolver problemas lógicos de programación y desarrolle habilidades que serán de utilidad en su carrera.
 
-***Nota.* El curso se centra en el lenguaje de programación Java.**
+```{admonition} Nota
+:class: tip
+El curso se centra en el lenguaje de programación Java ☕
+```
 
 ---
 
