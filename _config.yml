@@ -31,4 +31,6 @@ launch_buttons:
   colab_url: "https://colab.research.google.com"
 
 parse:
-  myst_extended_syntax: true
+  myst_enable_extensions:
+    - extension-1
+    - extension-2
