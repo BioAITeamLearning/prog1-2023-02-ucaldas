@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Recursos y Actividades
+# 🧰 Recursos y Actividades
 
 ## Recursos
 
