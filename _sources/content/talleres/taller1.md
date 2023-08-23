@@ -22,10 +22,10 @@ Este Taller debe entregarse en formato `docx`, con sus respectivas pruebas de es
 :::
 
 ### Ejercicio 1
-Un empleado trabaja $48$ horas a la semana a razón de $ $5.000$ hora. El porcentaje de retención en la fuente es del $12.5\%$ del salario bruto (salario bruto es el total antes de realizar los descuentos y el neto es el salario después de los descuentos). Se desea saber cuál es el salario bruto, la retención en la fuente y el salario neto del trabajador. 
+Un empleado trabaja $48$ horas a la semana a razón de $ \$5.000 $ hora. El porcentaje de retención en la fuente es del $ 12.5\% $ del salario bruto (salario bruto es el total antes de realizar los descuentos y el neto es el salario después de los descuentos). Se desea saber cuál es el salario bruto, la retención en la fuente y el salario neto del trabajador. 
 
 ### Ejercicio 2
-Dado el radio de un círculo $r=12$. Haga un algoritmo que obtenga el área del círculo y la longitud de la circunferencia. 
+Dado el radio de un círculo $ r=12 $. Haga un algoritmo que obtenga el área del círculo y la longitud de la circunferencia. 
 
 ### Ejercicio 3
 Dado el valor del lado en un triángulo equilátero, haga un algoritmo que obtenga el perímetro, el valor de la altura y el área del triángulo.
@@ -46,13 +46,14 @@ Un estudiante desea saber cuál será su promedio general y el promedio específ
 ### Ejercicio 5
 
 Calcular el número de pulsaciones que una persona debe tener por cada $10$ segundos de ejercicio, la fórmula es:
-$$\#Pulsaciones = \dfrac{(220 - edad)}{10}$$
+
+$$ \#Pulsaciones = \dfrac{(220 - edad)}{10} $$
 
 ### Ejercicio 6
 Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
 
 ### Ejercicio 7
-El dueño de una tienda compra un artículo a un precio determinado. Obtener el precio en que lo debe vender para obtener una ganancia del 30%.
+El dueño de una tienda compra un artículo a un precio determinado. Obtener el precio en que lo debe vender para obtener una ganancia del $ 30\% $.
 
 ### Ejercicio 8
 A la mamá de Juan le preguntan su edad, y contesta: tengo $3$ hijos, pregúntele a Juan su edad. Alberto tiene $2/3$ de la edad de Juan, Ana tiene $4/3$ de la edad de Juan y mi edad es la suma de las tres. Hacer un algoritmo que muestre la edad de los cuatro.
