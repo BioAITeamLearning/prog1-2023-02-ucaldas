@@ -32,5 +32,8 @@ launch_buttons:
 
 parse:
   myst_enable_extensions:
-    - extension-1
-    - extension-2
+    - dollarmath
+    - linkify
+    - substitution
+    - colon_fence
+    - html_admonition
