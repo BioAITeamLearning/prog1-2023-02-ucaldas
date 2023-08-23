@@ -46,11 +46,6 @@
 :::
 ::::
 
-
-:::{grid-item}
-:columns: 8
-:class: sd-fs-7
-
 Facultad de ingeniería, Ingeniería de Sistemas
 
 **Ph. D. Reinel Tabares Soto**
@@ -68,15 +63,16 @@ Facultad de ingeniería, Ingeniería de Sistemas
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="20" height="20">](https://www.researchgate.net/profile/Reinel-Tabares-Soto)
 ```
 
-:::
-
 ---
 
 ## Objetivos del curso
 
 Proporcionar los conceptos, fundamnetos y conocimientos necesarios para iniciar en el munndo de la programación; se proporcionará al estudiante material de apoyo y los fundamentos esenciales para que sea capaz de resolver problemas lógicos de programación y desarrolle habilidades que serán de utilidad en su carrera.
 
-***Nota.* El curso se centra en el lenguaje de programación Java.**
+```{admonition} Nota
+:class: tip
+El curso se centra en el lenguaje de programación Java ☕
+```
 
 ---
 
