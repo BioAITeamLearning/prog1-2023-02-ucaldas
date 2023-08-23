@@ -9,5 +9,6 @@ parts:
   chapters:
   - file: content/Unidad1
     sections:
+    - file: content/resources/clase-1/recursos-clase1
     - file: content/talleres/taller1
   - file: content/Unidad2
