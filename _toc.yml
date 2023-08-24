@@ -17,3 +17,5 @@ parts:
     - file: content/resources/clase-2/recursos-clase2
     - file: content/talleres/taller2
     - file: content/quices/quiz1
+  - file: content/Unidad3
+
