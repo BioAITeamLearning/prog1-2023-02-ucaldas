@@ -19,7 +19,7 @@ parts:
     - file: content/quices/quiz1
   - file: content/Unidad3
     sections:
-    - file: content/notebooks/Clase3-java
+    - file: content/notebooks/Clase3-Java
     - file: content/notebooks/Clase3-Python
     - file: content/resources/clase-3/recursos-clase3
     - file: content/talleres/taller3
