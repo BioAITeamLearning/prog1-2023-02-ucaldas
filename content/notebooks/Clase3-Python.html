@@ -1,0 +1,1190 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>📙 Operadores en Python &#8212; Curso Programación I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/notebooks/Clase3-Python';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="🧰 Recursos y Actividades" href="../resources/clase-3/recursos-clase3.html" />
+    <link rel="prev" title="📙 Operadores en Java" href="Clase3-Java.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    📖 Programación I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción al Curso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../presentacion1.html">🎥 Generalidades</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidades</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Clase 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Clase 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Unidad3.html">📘 Clase 3</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Clase3-Java.html">📙 Operadores en Java</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">📙 Operadores en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-3/recursos-clase3.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller3.html">📄 Taller 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz2.html">🔨 Quiz 2</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/BioAITeamLearning/prog1-2023-02-ucaldas/blob/master/content/notebooks/Clase3-Python.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/issues/new?title=Issue%20on%20page%20%2Fcontent/notebooks/Clase3-Python.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/notebooks/Clase3-Python.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>📙 Operadores en Python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores Lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">Operadores Aritméticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-relacionales">Operadores Relacionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-asignacion">Operadores de Asignación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jerarquia-de-operadores">Jerarquia de Operadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="operadores-en-python">
+<h1>📙 Operadores en Python<a class="headerlink" href="#operadores-en-python" title="Permalink to this heading">#</a></h1>
+<section id="tabla-de-contenido">
+<h2>Tabla de Contenido<a class="headerlink" href="#tabla-de-contenido" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">1 - Operadores Lógicos</span></p></li>
+<li><p><span class="xref myst">2 - Operadores Aritméticos</span></p></li>
+<li><p><span class="xref myst">3 - Operadores Relacionales</span></p></li>
+<li><p><span class="xref myst">4 - Operadores de Asignación</span></p></li>
+<li><p><span class="xref myst">5 - Jerarquia de Operadores</span></p></li>
+<li><p><span class="xref myst">6 - Ejercicio</span></p></li>
+</ul>
+<p><a name='1'></a></p>
+</section>
+<section id="operadores-logicos">
+<h2>Operadores Lógicos<a class="headerlink" href="#operadores-logicos" title="Permalink to this heading">#</a></h2>
+<p>Operador AND (<code class="docutils literal notranslate"><span class="pre">and</span></code>)</p>
+<img src="https://aristoteles2pc.files.wordpress.com/2011/03/tabla-de-verdad.png?w=225&h=300" height=225><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 0 = False, 1 = True</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+False
+False
+True
+</pre></div>
+</div>
+</div>
+</div>
+<p>Operador OR (<code class="docutils literal notranslate"><span class="pre">or</span></code>)</p>
+<img src="https://aristoteles2pc.files.wordpress.com/2011/03/or1.png?w=228&h=300" height=225><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+True
+True
+True
+</pre></div>
+</div>
+</div>
+</div>
+<p>Operador Negación o NOT (<code class="docutils literal notranslate"><span class="pre">not</span></code>)</p>
+<img src="https://aristoteles2pc.files.wordpress.com/2011/03/not1.png" height=180>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+False
+</pre></div>
+</div>
+</div>
+</div>
+<p>Operador XOR (<code class="docutils literal notranslate"><span class="pre">^</span></code>)</p>
+<img src="https://i.stack.imgur.com/Q7U6I.png" height=150><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="o">^</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="o">^</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="o">^</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="o">^</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+True
+True
+False
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='2'></a></p>
+</section>
+<section id="operadores-aritmeticos">
+<h2>Operadores Aritméticos<a class="headerlink" href="#operadores-aritmeticos" title="Permalink to this heading">#</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+<th style="text-align:center">Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">Realiza Adición entre los operandos</td>
+<td style="text-align:center">12 + 3 = 15</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Realiza Substracción entre los operandos</td>
+<td style="text-align:center">12 - 3 = 9</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">Realiza Multiplicación entre los operandos</td>
+<td style="text-align:center">12 * 3 = 36</td>
+</tr>
+<tr>
+<td style="text-align:center">/</td>
+<td style="text-align:center">Realiza División entre los operandos</td>
+<td style="text-align:center">12 / 3 = 4</td>
+</tr>
+<tr>
+<td style="text-align:center">%</td>
+<td style="text-align:center">Realiza un módulo entre los operandos</td>
+<td style="text-align:center">16 % 3 = 1</td>
+</tr>
+<tr>
+<td style="text-align:center">**</td>
+<td style="text-align:center">Realiza la potencia de los operandos</td>
+<td style="text-align:center">12 ** 3 = 1728</td>
+</tr>
+<tr>
+<td style="text-align:center">//</td>
+<td style="text-align:center">Realiza la división con resultado de número entero</td>
+<td style="text-align:center">18 // 5 = 3</td>
+</tr>
+</tbody>
+</table><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tipo de dato &#39;a&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;b&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">//</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+-4
+12
+36
+0.3333333333333333
+0
+2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">//</span><span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+
+<span class="c1"># Tipo de variable &#39;c&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+&lt;class &#39;int&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">2.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tipo de variable &#39;a&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+
+<span class="c1"># Tipo de variable &#39;b&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+
+<span class="c1"># Tipo de variable &#39;c&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">operacion_a</span> <span class="o">=</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span>
+
+<span class="n">operacion_b</span> <span class="o">=</span> <span class="n">a</span><span class="o">/</span><span class="n">c</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">operacion_a</span><span class="p">)</span>
+<span class="c1"># Tipo de dato &#39;operacion_a&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">operacion_a</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">operacion_b</span><span class="p">)</span>
+<span class="c1"># Tipo de dato &#39;operacion_b&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">operacion_b</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0
+&lt;class &#39;float&#39;&gt;
+3.0
+&lt;class &#39;float&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">operacion_A</span> <span class="o">=</span> <span class="n">a</span><span class="o">//</span><span class="n">b</span>
+
+<span class="n">operacion_B</span> <span class="o">=</span> <span class="n">a</span><span class="o">//</span><span class="n">c</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">operacion_A</span><span class="p">)</span>
+<span class="c1"># Tipo de dato &#39;operacion_A&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">operacion_A</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">operacion_B</span><span class="p">)</span>
+<span class="c1"># Tipo de dato &#39;operacion_B&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">operacion_B</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+&lt;class &#39;int&#39;&gt;
+3.0
+&lt;class &#39;float&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='3'></a></p>
+</section>
+<section id="operadores-relacionales">
+<h2>Operadores Relacionales<a class="headerlink" href="#operadores-relacionales" title="Permalink to this heading">#</a></h2>
+<p><img alt="image.png" src="data:image/png;base64,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" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num_1</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_2</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">num_3</span> <span class="o">=</span> <span class="mf">2.0001</span>
+<span class="n">num_4</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">letra_E</span> <span class="o">=</span> <span class="s1">&#39;E&#39;</span>
+<span class="n">letra_e</span> <span class="o">=</span> <span class="s1">&#39;e&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tipo de dato &#39;num_1&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num_1</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;num_2&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num_2</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;num_3&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num_3</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;num_4&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num_4</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;letra_E&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">letra_E</span><span class="p">))</span>
+
+<span class="c1"># Tipo de dato &#39;letra_e&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">letra_e</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;int&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es mayor que 5?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">&gt;</span> <span class="n">num_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es menor que 5?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">&lt;</span> <span class="n">num_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es mayor o igual que 5?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">&gt;=</span> <span class="n">num_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es menor o igual que 5?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">&lt;=</span> <span class="n">num_2</span><span class="p">)</span>
+
+<span class="c1"># 2 es menor o igual que 2?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">&lt;=</span> <span class="n">num_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es igual a 2.0001?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">==</span> <span class="n">num_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 es diferente a 2.0001?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_1</span> <span class="o">!=</span> <span class="n">num_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># la letra &#39;E&#39; es diferente a la letra &#39;e&#39;?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letra_E</span> <span class="o">!=</span> <span class="n">letra_e</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='4'></a></p>
+</section>
+<section id="operadores-de-asignacion">
+<h2>Operadores de Asignación<a class="headerlink" href="#operadores-de-asignacion" title="Permalink to this heading">#</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">=</td>
+<td style="text-align:center">a = 5. El valor 5 es asignado a la variable a</td>
+</tr>
+<tr>
+<td style="text-align:center">+=</td>
+<td style="text-align:center">a += 5 es equivalente a a = a + 5</td>
+</tr>
+<tr>
+<td style="text-align:center">-=</td>
+<td style="text-align:center">a -= 5 es equivalente a a = a - 5</td>
+</tr>
+<tr>
+<td style="text-align:center">*=</td>
+<td style="text-align:center">a *= 3 es equivalente a a = a * 3</td>
+</tr>
+<tr>
+<td style="text-align:center">/=</td>
+<td style="text-align:center">a /= 3 es equivalente a a = a / 3</td>
+</tr>
+<tr>
+<td style="text-align:center">%=</td>
+<td style="text-align:center">a %= 3 es equivalente a a = a % 3</td>
+</tr>
+<tr>
+<td style="text-align:center">**=</td>
+<td style="text-align:center">a **= 3 es equivalente a a = a ** 3</td>
+</tr>
+<tr>
+<td style="text-align:center">//=</td>
+<td style="text-align:center">a //= 3 es equivalente a a = a // 3</td>
+</tr>
+</tbody>
+</table><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">+=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">-=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">*=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">**=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">/=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">//=</span> <span class="mf">1.5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">var3</span> <span class="o">%=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+-8
+4
+16
+1.0
+1.0
+0
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='5'></a></p>
+</section>
+<section id="jerarquia-de-operadores">
+<h2>Jerarquia de Operadores<a class="headerlink" href="#jerarquia-de-operadores" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Jerarquia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Paréntesis <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Exponente <code class="docutils literal notranslate"><span class="pre">**</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>División (<code class="docutils literal notranslate"><span class="pre">/</span></code>) y Módulo (<code class="docutils literal notranslate"><span class="pre">%</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multiplicación (<code class="docutils literal notranslate"><span class="pre">*</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>Suma (<code class="docutils literal notranslate"><span class="pre">+</span></code>) y Resta (<code class="docutils literal notranslate"><span class="pre">-</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Operadores Relacionales (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>Negación (<code class="docutils literal notranslate"><span class="pre">not</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conjunción (<code class="docutils literal notranslate"><span class="pre">and</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>Disyunción inclusiva (<code class="docutils literal notranslate"><span class="pre">or</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Operadores de Asignación</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Para más información sobre prioridad de operadores en Python visite este <a class="reference external" href="https://interactivechaos.com/es/manual/tutorial-de-python/precedencia-de-operadores">enlace</a></em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="mi">5</span> <span class="o">**</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>15628
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="mi">5</span> <span class="o">%</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span> <span class="o">*</span> <span class="n">a</span> <span class="o">/</span> <span class="n">c</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span> <span class="o">*</span> <span class="n">c</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span> <span class="o">%</span>  <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="o">*</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">c</span> <span class="o">*</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='6'></a></p>
+</section>
+<section id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h2>
+<p>Realice una impresión de una factura que muestre:</p>
+<ul class="simple">
+<li><p>El precio individual de una hamburguesa (5 dolares)</p></li>
+<li><p>El precio invididual de una gaseosa (2 dolares)</p></li>
+<li><p>El precio del menú con hamburguesa, gaseosa y papas cuyo costo es de 10 dolares</p></li>
+<li><p>El precio total sin IVA</p></li>
+<li><p>El precio total con IVA del 8%</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Clase3-Java.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">📙 Operadores en Java</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/clase-3/recursos-clase3.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">🧰 Recursos y Actividades</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-logicos">Operadores Lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">Operadores Aritméticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-relacionales">Operadores Relacionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-asignacion">Operadores de Asignación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jerarquia-de-operadores">Jerarquia de Operadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Joshua Bernal & Ricardo Ortega
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
