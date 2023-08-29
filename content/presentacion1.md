@@ -16,6 +16,11 @@ kernelspec:
     <br>
 </div>
 
+```{admonition} Nota
+:class: note
+Si no ves cambios en cualquier unidad de la página realiza un [hard refresh](https://filecamp.com/support/problem-solving/hard-refresh/) presionando `Ctrl` + `Shift` + `R` (Windows/Linux), o `⌘` + `Shift` + `R` (Mac OS).
+```
+
 ## Clases y horarios
 
 **Grupo 1**
@@ -38,8 +43,6 @@ Plan de estudios Ingeniería de Sistemas y Computación
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
-    PDF
-    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/area-prog.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     Presentación
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/area-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
@@ -50,8 +53,6 @@ Plan de estudios Ingeniería de Sistemas y Computación
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
-    PDF
-    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/info-prog.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     Presentación
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/info-prog.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>
@@ -78,8 +79,6 @@ Porcentajes de Pariciales, Quices y Talleres
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
-    PDF
-    <iframe src="https://docs.google.com/viewer?url=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx&embedded=true" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     Presentación
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-1/porcentajes.pptx" frameborder="1" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </div>

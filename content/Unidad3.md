@@ -23,7 +23,7 @@ kernelspec:
 </div>
 
 :::{note}
-Puedes acceder a los notebook en la siguiente página (*Operadores Java y Python *)
+Puedes acceder a los notebooks en las siguiente páginas (*Operadores en Java y Python*)
 :::
 
 ## Operadores Aritmeticos

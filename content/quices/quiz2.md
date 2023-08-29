@@ -21,8 +21,8 @@ Evaluemos lo aprendido en la Clase 3
 :::{card}
 :class-body: text-center
 :class-header: bg-light text-center
-:link: asa
-**💬 Quiz 3**
+:link: https://docs.google.com/forms/d/e/1FAIpQLSeXwh4WEjD8RCMCtW0z2KJPfA3Zqo1UyyM8eXDV7qn0vadq0Q/viewform?usp=sharing
+**💬 Quiz 2**
 ^^^
 ```{image} https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png
 :height: 100
