@@ -17,7 +17,7 @@ kernelspec:
 :::{card} 📁 Ejemplos PSeInt
 Accede a ejemplos de PSeInt
 
-[Enlace a la carpeta](https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/tree/41066861c56e17b0ce22b9724b602a8067bd0261/content/resources/clase-4/ejemplos-pseint)
+[Enlace a la carpeta](https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/tree/3a61e09745670a0ddb4148d75ec9e3743fdc3aca/content/resources/clase-4/ejemplos-pseint)
 :::
 
 :::{card} 🌐 ¿Qúe es la prueba de Escritorio?
