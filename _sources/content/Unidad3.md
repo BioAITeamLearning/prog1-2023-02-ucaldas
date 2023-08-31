@@ -69,4 +69,4 @@ Puedes acceder a los notebook en la siguiente página (*Operadores en Java y Pyt
 :::{warning} La presentación completa es temporal
 :::
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRY6NeKu9Pibf98lRwstZcovHgQ6KEu_nQWNEAz29Nm0Sv2c0OLvNRmF3DDkHUqVQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRY6NeKu9Pibf98lRwstZcovHgQ6KEu_nQWNEAz29Nm0Sv2c0OLvNRmF3DDkHUqVQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
