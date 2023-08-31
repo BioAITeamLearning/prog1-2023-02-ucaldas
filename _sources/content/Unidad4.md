@@ -67,6 +67,10 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
 
 ### Practiquemos lo aprendido
 
+::::{grid}
+
+:::{grid-item}
+:columns: 9
 1. Realiza un programa donde se le pida a un usuario que ingrese 2 números flotantes, y realiza las siguientes operaciones:
     - **a.** Calcular la 4ta potencia de cada número y su raíz
     - **b.** Dividir las potencias entre sus raices correspondientes
@@ -79,3 +83,11 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
     - **b.** Módulo
     - **c.** Incrementar y disminuir en 1 su valor
     - **d.** Convertir a binario
+:::
+
+:::{grid-item}
+:columns: 3
+<img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
+:::
+
+::::
