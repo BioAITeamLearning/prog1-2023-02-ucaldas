@@ -91,3 +91,10 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
 :::
 
 ::::
+
+## Presentación Completa
+
+:::{warning} La presentación completa es temporal
+:::
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSawYt0jqBZY4QtCQLm_9gy1b9eHcnZaGmmQ8iFEjim3Mt2iGKuuJz0rP3bsALmVQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
