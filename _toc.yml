@@ -30,4 +30,10 @@ parts:
     - file: content/resources/clase-4/recursos-clase4
     - file: content/talleres/taller4
     - file: content/quices/quiz3
+  - file: content/Unidad5
+    sections:
+    - file: content/notebooks/Clase5-Java
+    - file: content/resources/clase-5/recursos-clase5
+    - file: content/talleres/taller5
+    - file: content/quices/quiz4
 
