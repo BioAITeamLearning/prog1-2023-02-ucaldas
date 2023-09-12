@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Unidad4';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Unidad5';</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="📙 Strings y Entrada de Variables" href="notebooks/Clase4-Java.html" />
-    <link rel="prev" title="🔨 Quiz 2" href="quices/quiz2.html" />
+    <link rel="next" title="📙 Condicionales" href="notebooks/Clase5-Java.html" />
+    <link rel="prev" title="🔨 Quiz 3" href="quices/quiz3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -183,14 +185,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="quices/quiz2.html">🔨 Quiz 2</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">📘 Clase 4</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad4.html">📘 Clase 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Clase4-Java.html">📙 Strings y Entrada de Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resources/clase-4/recursos-clase4.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="talleres/taller4.html">📄 Taller 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quices/quiz3.html">🔨 Quiz 3</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad5.html">📘 Clase 4</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">📘 Clase 4</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Clase5-Java.html">📙 Condicionales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resources/clase-5/recursos-clase5.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="talleres/taller5.html">📄 Taller 5</a></li>
@@ -251,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/BioAITeamLearning/prog1-2023-02-ucaldas/blob/master/content/Unidad4.md" target="_blank"
+      <li><a href="https://colab.research.google.com/github/BioAITeamLearning/prog1-2023-02-ucaldas/blob/master/content/Unidad5.md" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +301,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/issues/new?title=Issue%20on%20page%20%2Fcontent/Unidad4.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/issues/new?title=Issue%20on%20page%20%2Fcontent/Unidad5.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +331,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/Unidad4.ipynb" target="_blank"
+      <li><a href="../_sources/content/Unidad5.ipynb" target="_blank"
    class="btn btn-sm btn-download-notebook-button dropdown-item"
    title="Descargar archivo de cuaderno"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +348,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/content/Unidad4.md" target="_blank"
+      <li><a href="../_sources/content/Unidad5.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -438,15 +440,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-de-escritorio-y-ejemplos">Pruebas de Escritorio y Ejemplos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-if">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-else">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practiquemos-lo-aprendido">Practiquemos lo aprendido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-y-ejecucion-de-un-programa">Creación y Ejecución de un Programa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-y-salida-de-variables">Entrada y Salida de Variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Practiquemos lo aprendido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-else-if">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-switch-case">Estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-estructura-switch-case">Ejemplos estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentacion-completa">Presentación Completa</a></li>
 </ul>
             </nav>
@@ -461,83 +466,42 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="clase-4">
 <h1>📘 Clase 4<a class="headerlink" href="#clase-4" title="Permalink to this heading">#</a></h1>
-<section id="pruebas-de-escritorio-y-ejemplos">
-<h2>Pruebas de Escritorio y Ejemplos<a class="headerlink" href="#pruebas-de-escritorio-y-ejemplos" title="Permalink to this heading">#</a></h2>
+<section id="condicionales">
+<h2>Condicionales<a class="headerlink" href="#condicionales" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Definición de condicionales</p></li>
+<li><p>Estructura <code class="docutils literal notranslate"><span class="pre">if</span></code> y su diagrama de flujo</p></li>
+<li><p>Estructura <code class="docutils literal notranslate"><span class="pre">else</span></code> y su diagrama de flujo</p></li>
+<li><p>Estructura <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> y su diagrama de flujo</p></li>
+</ul>
 <div class="admonition tip dropdown">
 <p class="admonition-title">Click para ver Diapositivas</p>
 <p>Presentación
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-4/pruebas-escritorio.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/condicionales.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+</div>
+</section>
+<section id="ejemplos-esctructura-if">
+<h2>Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#ejemplos-esctructura-if" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip dropdown">
+<p class="admonition-title">Click para ver Diapositivas</p>
+<p>Presentación
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/ejemplos-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+</div>
+</section>
+<section id="ejemplos-esctructura-else">
+<h2>Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#ejemplos-esctructura-else" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip dropdown">
+<p class="admonition-title">Click para ver Diapositivas</p>
+<p>Presentación
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/ejemplos-else.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
 </div>
 <section id="practiquemos-lo-aprendido">
 <h3>Practiquemos lo aprendido<a class="headerlink" href="#practiquemos-lo-aprendido" title="Permalink to this heading">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
 <div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
-<ol class="arabic simple">
-<li><p>Desarrollar en PSeInt un algoritmo que al declarar 2 números enteros calcule:</p>
-<ul class="simple">
-<li><p><strong>a.</strong> el producto/multiplicación entre estos dos</p></li>
-<li><p><strong>b.</strong> la raíz cúbica de cada uno</p></li>
-<li><p><strong>c.</strong> dividir el resultado del punto a por la resta de las dos variables calculadas en el punto b</p></li>
-<li><p><strong>d.</strong> imprimir el resultado del punto c</p></li>
-</ul>
-</li>
-<li><p>Realice el diagrama de flujo y la prueba de escritorio del ejercicio.</p></li>
-</ol>
-</div>
-<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
-<img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-pipa.png" width="80" />
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="creacion-y-ejecucion-de-un-programa">
-<h2>Creación y Ejecución de un Programa<a class="headerlink" href="#creacion-y-ejecucion-de-un-programa" title="Permalink to this heading">#</a></h2>
-<div class="admonition tip dropdown">
-<p class="admonition-title">Click para ver Diapositivas</p>
-<p>Presentación
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-4/creacion-ejecucion-programa.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
-</div>
-</section>
-<section id="entrada-y-salida-de-variables">
-<h2>Entrada y Salida de Variables<a class="headerlink" href="#entrada-y-salida-de-variables" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Manejo de Strings</p></li>
-<li><p>Leer e imprimir variables</p></li>
-</ul>
-<div class="admonition tip dropdown">
-<p class="admonition-title">Click para ver Diapositivas</p>
-<p>Presentación
-<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-4/entrada-salida-var.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Puedes acceder a los notebooks en las siguiente páginas (<em>Strings y Entrada de Variables</em>)</p>
-</div>
-<section id="id1">
-<h3>Practiquemos lo aprendido<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
-<ol class="arabic simple">
-<li><p>Realiza un programa donde se le pida a un usuario que ingrese 2 números flotantes, y realiza las siguientes operaciones:</p>
-<ul class="simple">
-<li><p><strong>a.</strong> Calcular la 4ta potencia de cada número y su raíz</p></li>
-<li><p><strong>b.</strong> Dividir las potencias entre sus raices correspondientes</p></li>
-<li><p><strong>c.</strong> Obten la potencia (la base es el resultado del punto b y el exponente es 3), imprime el resultado</p></li>
-</ul>
-</li>
-<li><p>Pide por teclado los datos de un usuario (Nombre completo, CC, edad y ciudad), repite el procedimiento para 2 personas en el mismo programa y muéstralo.</p></li>
-<li><p>Pídele al usuario que ingrese un número y realiza las siguientes operaciones</p>
-<ul class="simple">
-<li><p><strong>a.</strong> Raíz</p></li>
-<li><p><strong>b.</strong> Módulo de 3</p></li>
-<li><p><strong>c.</strong> Incrementar y disminuir en 1 su valor</p></li>
-<li><p><strong>d.</strong> Convertir a binario</p></li>
-</ul>
-</li>
-</ol>
+<p>Un empleado de la tienda Tiki Taka realiza 3 ventas durante el día, se requiere saber cuál de ellas fue mayores a <span class="math notranslate nohighlight">\(\$1000\)</span>, cuál fue mayor a <span class="math notranslate nohighlight">\(\$500\)</span> pero menores o iguales a <span class="math notranslate nohighlight">\(\$1000\)</span>, y cuál fue menor o igual a <span class="math notranslate nohighlight">\(\$500\)</span>. Además, se requiere saber el monto de lo vendido en cada categoría y de forma global.</p>
+<p>Nota. Los 3 montos no necesariamente tienen que pertenecer a uno de los grupos sino que pueden repetir grupo.</p>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
 <img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
@@ -546,13 +510,59 @@ document.write(`
 </div>
 </section>
 </section>
+<section id="ejemplos-esctructura-else-if">
+<h2>Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code><a class="headerlink" href="#ejemplos-esctructura-else-if" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip dropdown">
+<p class="admonition-title">Click para ver Diapositivas</p>
+<p>Presentación
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/ejemplos-else-if.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Puedes acceder a los notebooks en las siguiente páginas (<em>Condicionales</em>)</p>
+</div>
+<section id="ejercicio">
+<h3>Ejercicio<a class="headerlink" href="#ejercicio" title="Permalink to this heading">#</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<p>Un empleado de la tienda Tiki Taka realiza 3 ventas durante el día, se requiere saber cuál de ellas fue mayores a <span class="math notranslate nohighlight">\(\$1000\)</span>, cuál fue mayor a <span class="math notranslate nohighlight">\(\$500\)</span> pero menores o iguales a <span class="math notranslate nohighlight">\(\$1000\)</span>, y cuál fue menor o igual a <span class="math notranslate nohighlight">\(\$500\)</span>. Además, se requiere saber el monto de lo vendido en cada categoría y de forma global.</p>
+<p>Nota. Los 3 montos no necesariamente tienen que pertenecer a uno de los grupos sino que pueden repetir grupo.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-pipa.png" width="80" />
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="estructura-switch-case">
+<h2>Estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code><a class="headerlink" href="#estructura-switch-case" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip dropdown">
+<p class="admonition-title">Click para ver Diapositivas</p>
+<p>Presentación
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+</div>
+</section>
+<section id="ejemplos-estructura-switch-case">
+<h2>Ejemplos estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code><a class="headerlink" href="#ejemplos-estructura-switch-case" title="Permalink to this heading">#</a></h2>
+<div class="admonition tip dropdown">
+<p class="admonition-title">Click para ver Diapositivas</p>
+<p>Presentación
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-5/ejemplos-switch-case.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Puedes acceder a los notebooks en las siguiente páginas (<em>Condicionales</em>)</p>
+</div>
+</section>
 <section id="presentacion-completa">
 <h2>Presentación Completa<a class="headerlink" href="#presentacion-completa" title="Permalink to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Advertencia</p>
 <p>La presentación completa es temporal</p>
 </div>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSawYt0jqBZY4QtCQLm_9gy1b9eHcnZaGmmQ8iFEjim3Mt2iGKuuJz0rP3bsALmVQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></section>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSpohERy3XjjUFkagsugRfI218VRQqJZ5IV54GzFHEfuI_cSHBs2bl0dQj7U_J5Kw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="790" height="490" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -589,20 +599,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="quices/quiz2.html"
+       href="quices/quiz3.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">🔨 Quiz 2</p>
+        <p class="prev-next-title">🔨 Quiz 3</p>
       </div>
     </a>
     <a class="right-next"
-       href="notebooks/Clase4-Java.html"
+       href="notebooks/Clase5-Java.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">📙 Strings y Entrada de Variables</p>
+        <p class="prev-next-title">📙 Condicionales</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -624,15 +634,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pruebas-de-escritorio-y-ejemplos">Pruebas de Escritorio y Ejemplos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-if">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-else">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practiquemos-lo-aprendido">Practiquemos lo aprendido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-y-ejecucion-de-un-programa">Creación y Ejecución de un Programa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-y-salida-de-variables">Entrada y Salida de Variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Practiquemos lo aprendido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-esctructura-else-if">Ejemplos esctructura <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-switch-case">Estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-estructura-switch-case">Ejemplos estructura <code class="docutils literal notranslate"><span class="pre">switch</span> <span class="pre">case</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentacion-completa">Presentación Completa</a></li>
 </ul>
   </nav></div>

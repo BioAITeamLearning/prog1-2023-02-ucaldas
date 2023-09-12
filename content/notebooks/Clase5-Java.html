@@ -1,0 +1,1381 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>📙 Condicionales &#8212; Curso Programación I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/notebooks/Clase5-Java';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="🧰 Recursos y Actividades" href="../resources/clase-5/recursos-clase5.html" />
+    <link rel="prev" title="📘 Clase 4" href="../Unidad5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    📖 Programación I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción al Curso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../presentacion1.html">🎥 Generalidades</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidades</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad1.html">📘 Clase 1</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-1/recursos-clase1.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller1.html">📄 Taller 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad2.html">📘 Clase 2</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Clase2.html">📙 Tipos de Datos y Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-2/recursos-clase2.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller2.html">📄 Taller 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz1.html">🔨 Quiz 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad3.html">📘 Clase 3</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Clase3-Java.html">📙 Operadores en Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Clase3-Python.html">📙 Operadores en Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-3/recursos-clase3.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller3.html">📄 Taller 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz2.html">🔨 Quiz 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad4.html">📘 Clase 4</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Clase4-Java.html">📙 Strings y Entrada de Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-4/recursos-clase4.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller4.html">📄 Taller 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz3.html">🔨 Quiz 3</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Unidad5.html">📘 Clase 4</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">📙 Condicionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-5/recursos-clase5.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../talleres/taller5.html">📄 Taller 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz4.html">🔨 Quiz 4</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/BioAITeamLearning/prog1-2023-02-ucaldas/blob/master/content/notebooks/Clase5-Java.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/issues/new?title=Issue%20on%20page%20%2Fcontent/notebooks/Clase5-Java.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/notebooks/Clase5-Java.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>📙 Condicionales</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias">Importar Librerias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-condicionales">Ejemplos Condicionales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-if">Ejemplos <code class="docutils literal notranslate"><span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-else">Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-5">Ejemplo 5:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-6">Ejemplo 6:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-else-if">Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-9">Ejemplo 9:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-10">Ejemplo 10:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-11">Ejemplo 11:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-switch-case">Ejemplos Switch Case</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12">Ejemplo 12:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13">Ejemplo 13:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14">Ejemplo 14:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="condicionales">
+<h1>📙 Condicionales<a class="headerlink" href="#condicionales" title="Permalink to this heading">#</a></h1>
+<section id="tabla-de-contenido">
+<h2>Tabla de Contenido<a class="headerlink" href="#tabla-de-contenido" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">1 - Instalar Java</span></p></li>
+<li><p><span class="xref myst">2 - Ejemplos Condicionales</span></p>
+<ul>
+<li><p><span class="xref myst">2.1 - Ejemplos if</span></p></li>
+<li><p><span class="xref myst">2.2 - Ejemplos else</span></p></li>
+<li><p><span class="xref myst">2.3 - Ejemplos else if</span></p></li>
+</ul>
+</li>
+<li><p><span class="xref myst">3 - Ejemplos Switch Case</span></p></li>
+<li><p><span class="xref myst">4 - Ejercicios</span></p></li>
+</ul>
+<p><a name='1'></a></p>
+</section>
+<section id="instalar-java">
+<h2>Instalar Java<a class="headerlink" href="#instalar-java" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">sh</span>
+<span class="n">wget</span><span class="w"> </span><span class="o">-</span><span class="n">q</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="c1">//github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip</span>
+<span class="n">unzip</span><span class="w"> </span><span class="o">-</span><span class="n">q</span><span class="w"> </span><span class="n">ijava</span><span class="o">-</span><span class="mf">1.3.0</span><span class="p">.</span><span class="na">zip</span>
+<span class="n">python</span><span class="w"> </span><span class="n">install</span><span class="p">.</span><span class="na">py</span>
+
+<span class="n">wget</span><span class="w"> </span><span class="o">-</span><span class="n">qO</span><span class="o">-</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="c1">//gist.github.com/SpencerPark/e2732061ad19c1afa4a33a58cb8f18a9/archive/b6cff2bf09b6832344e576ea1e4731f0fb3df10c.tar.gz | tar xvz --strip-components=1</span>
+<span class="n">python</span><span class="w"> </span><span class="n">install_ipc_proxy_kernel</span><span class="p">.</span><span class="na">py</span><span class="w"> </span><span class="o">--</span><span class="n">kernel</span><span class="o">=</span><span class="n">java</span><span class="w"> </span><span class="o">--</span><span class="n">implementation</span><span class="o">=</span><span class="n">ipc_proxy_kernel</span><span class="p">.</span><span class="na">py</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installed java kernel into &quot;/usr/local/share/jupyter/kernels/java&quot;
+e2732061ad19c1afa4a33a58cb8f18a9-b6cff2bf09b6832344e576ea1e4731f0fb3df10c/install_ipc_proxy_kernel.py
+e2732061ad19c1afa4a33a58cb8f18a9-b6cff2bf09b6832344e576ea1e4731f0fb3df10c/ipc_proxy_kernel.py
+Moving java kernel from /usr/local/share/jupyter/kernels/java...
+Wrote modified kernel.json for java_tcp in /usr/local/share/jupyter/kernels/java_tcp/kernel.json
+Installing the proxy kernel in place of java in /usr/local/share/jupyter/kernels/java
+Installed proxy kernelspec: {&quot;argv&quot;: [&quot;/usr/bin/python3&quot;, &quot;/usr/local/share/jupyter/kernels/java/ipc_proxy_kernel.py&quot;, &quot;{connection_file}&quot;, &quot;--kernel=java_tcp&quot;], &quot;env&quot;: {}, &quot;display_name&quot;: &quot;Java&quot;, &quot;language&quot;: &quot;java&quot;, &quot;interrupt_mode&quot;: &quot;message&quot;, &quot;metadata&quot;: {}}
+Proxy kernel installed. Go to &#39;Runtime &gt; Change runtime type&#39; and select &#39;java&#39;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/install.py:164: DeprecationWarning: replace is ignored. Installing a kernelspec always replaces an existing installation
+  install_dest = KernelSpecManager().install_kernel_spec(
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Instrucciones para activar el kernel</p>
+<p>Dirigite a <code>Entorno de ejecución</code> &gt; <code>Cambiar tipo de entorno de ejecución</code> &gt; Elige la opción <code>Java</code> &gt; Da click en <code>Guardar</code></p>
+</div>
+</section>
+<section id="importar-librerias">
+<h2>Importar Librerias<a class="headerlink" href="#importar-librerias" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Libreria para usar potencia y otras funciones matemáticas</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.lang.Math</span><span class="p">;</span>
+
+<span class="c1">// Libreria para usar el objeto Scanner (leer variables)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='2'></a></p>
+</section>
+<section id="ejemplos-condicionales">
+<h2>Ejemplos Condicionales<a class="headerlink" href="#ejemplos-condicionales" title="Permalink to this heading">#</a></h2>
+<p><a name='2.1'></a></p>
+<section id="ejemplos-if">
+<h3>Ejemplos <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#ejemplos-if" title="Permalink to this heading">#</a></h3>
+<section id="ejemplo-1">
+<h4>Ejemplo 1:<a class="headerlink" href="#ejemplo-1" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que me diga si un numero <span class="math notranslate nohighlight">\(X\)</span> es mayor que <span class="math notranslate nohighlight">\(5\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable scn de tipo scanner</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer número</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese un número:&quot;</span><span class="p">);</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
+
+<span class="c1">// Acción</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;x es mayor que 5&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese un número:
+3
+x es menor que 5
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-2">
+<h4>Ejemplo 2:<a class="headerlink" href="#ejemplo-2" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que me diga si una persona es mayor de edad e imprima el mensaje <code class="docutils literal notranslate"><span class="pre">&quot;Mientras</span> <span class="pre">usted</span> <span class="pre">viva</span> <span class="pre">en</span> <span class="pre">esta</span> <span class="pre">casa</span> <span class="pre">se</span> <span class="pre">hará</span> <span class="pre">lo</span> <span class="pre">que</span> <span class="pre">yo</span> <span class="pre">diga&quot;</span></code>, en caso de que viva en la casa de sus padres y sea mayor de edad. Debe pedir la edad del usuario y preguntar si vive o no en la casa de sus padres.</p>
+<p><em>Implementación de <code class="docutils literal notranslate"><span class="pre">if</span></code> anidados. Los <code class="docutils literal notranslate"><span class="pre">if</span></code> anidados son estructuras que establecen condiciones consecutivas donde se encandenan, esto tiene diferentes aplicaciones desde hacer validaciones hasta generar filtros de condición.</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer la edad</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Variable para leer si o no</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer edad</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese la edad:&quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Leer si o no</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Vive en casa (si/no):&quot;</span><span class="p">);</span>
+<span class="n">String</span><span class="w"> </span><span class="n">casa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scin</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="c1">// Acción con if anidados</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">edad</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">edad</span><span class="o">&gt;=</span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Es mayor de edad&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">casa</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;si&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Mientras usted viva en esta casa se hará lo que yo diga&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span><span class="p">{</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;puede hacer lo que le de la gana en su casa&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">else</span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;usted es un bebe&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;aprenda a escribir edades&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese la edad:
+19
+Vive en casa (si/no):
+si
+Mientras usted viva en esta casa se hará lo que yo diga
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='2.2'></a></p>
+</section>
+</section>
+<section id="ejemplos-else">
+<h3>Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#ejemplos-else" title="Permalink to this heading">#</a></h3>
+<section id="ejemplo-3">
+<h4>Ejemplo 3:<a class="headerlink" href="#ejemplo-3" title="Permalink to this heading">#</a></h4>
+<p><em><code class="docutils literal notranslate"><span class="pre">if</span></code> anidado incorporando <code class="docutils literal notranslate"><span class="pre">else</span></code></em></p>
+<p>Realizar un programa donde se le pida a un usuario que ingrese la temperatura actual de forma que si la temperatura es mayor a <span class="math notranslate nohighlight">\(15°\)</span> Celsius pase a la siguiente condición, donde se le pregunta si es mayor a <span class="math notranslate nohighlight">\(25°\)</span> Celsius, en caso de ser así, imprimir el mensaje <code class="docutils literal notranslate"><span class="pre">&quot;A</span> <span class="pre">la</span> <span class="pre">playa&quot;</span></code>, de lo contrario imprimir <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">la</span> <span class="pre">montaña!</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer la temperatura</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer la temperatura</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese el valor de la temperatura&quot;</span><span class="p">);</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">temperatura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperatura</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperatura</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Si la temperatura es mayor que 25 ...</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A la playa!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A la montaña!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el valor de la temperatura
+10
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-4">
+<h4>Ejemplo 4:<a class="headerlink" href="#ejemplo-4" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que pida por teclado 2 números enteros diferentes y compare e imprima el mayor de ellos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Se pueden definir n variables del mismo tipo en la misma linea:</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">num1</span><span class="p">,</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
+
+<span class="c1">// Variable para leer enteros</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="w"> </span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer numeros enteros</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese el primer numero: &quot;</span><span class="p">);</span>
+<span class="n">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese el segundo numero: &quot;</span><span class="p">);</span>
+<span class="n">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Comparar numeros</span>
+<span class="k">if</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">num2</span><span class="p">){</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El número mayor es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num1</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El número mayor es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el primer numero: 
+4
+Ingrese el segundo numero: 
+5
+El número mayor es: 5
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-5">
+<h4>Ejemplo 5:<a class="headerlink" href="#ejemplo-5" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que simule un inicio de sesión solicitando el nombre de usuario y contraseña. Mostrar un mensaje en pantalla si el inicio de sesión es correcto o incorrecto.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Definiendo variables String en la misma linea:</span>
+<span class="n">String</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">clave</span><span class="p">;</span>
+
+<span class="c1">// Variable para leer String</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer Usuario y contraseña</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese Nombre de usuario: &quot;</span><span class="p">);</span>
+<span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese Clave de usuario: &quot;</span><span class="p">);</span>
+<span class="n">clave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="c1">// Validar entradas</span>
+<span class="k">if</span><span class="p">(</span><span class="n">nombre</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;Juan&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">clave</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;123456&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Bienvenido al Sistema&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Nombre de Usuario o Contraseña Incorrecto&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese Nombre de usuario: Juan 
+Ingrese Clave de usuario: 123456
+Nombre de Usuario o Contraseña Incorrecto
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-6">
+<h4>Ejemplo 6:<a class="headerlink" href="#ejemplo-6" title="Permalink to this heading">#</a></h4>
+<p>Una farmacia desea un programa para ingresar el valor de compra y calcular lo siguiente: si el pago se efectúa al <code class="docutils literal notranslate"><span class="pre">&quot;contado&quot;</span></code>, calcular un descuento del <span class="math notranslate nohighlight">\(5%\)</span>; pero si el pago es con <code class="docutils literal notranslate"><span class="pre">&quot;tarjeta&quot;</span></code> se incrementa un recargo del <span class="math notranslate nohighlight">\(3%\)</span> al valor de compra. Calcular y visualizar el descuento o recargo según sea el caso y el total a pagar de la compra.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Definir variables double en una sola linea:</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">valor</span><span class="p">,</span><span class="w"> </span><span class="n">descuento</span><span class="p">,</span><span class="w"> </span><span class="n">recargo</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+
+<span class="c1">// Definir String</span>
+<span class="n">String</span><span class="w"> </span><span class="n">tipo_pago</span><span class="p">;</span>
+
+<span class="c1">// Variable para leer String</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer variables</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el valor de la compra: &quot;</span><span class="p">);</span>
+<span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese tipo de pago: &quot;</span><span class="p">);</span>
+<span class="n">tipo_pago</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+<span class="n">tipo_pago</span><span class="w"> </span><span class="o">=</span><span class="n">tipo_pago</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">();</span>
+
+<span class="c1">// Descuento y recargo</span>
+<span class="n">descuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="o">*</span><span class="n">valor</span><span class="p">;</span>
+<span class="n">recargo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.03</span><span class="o">*</span><span class="n">valor</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tipo_pago</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;contado&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El descuento es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">descuento</span><span class="p">);</span>
+<span class="w">  </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">descuento</span><span class="p">;</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El total es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El recargo es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recargo</span><span class="p">);</span>
+<span class="w">  </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recargo</span><span class="p">;</span>
+<span class="w">  </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El total es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el valor de la compra: 100
+Ingrese tipo de pago: contado
+El descuento es: 5.0
+El total es: 95.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='2.3'></a></p>
+</section>
+</section>
+<section id="ejemplos-else-if">
+<h3>Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code><a class="headerlink" href="#ejemplos-else-if" title="Permalink to this heading">#</a></h3>
+<section id="ejemplo-7">
+<h4>Ejemplo 7:<a class="headerlink" href="#ejemplo-7" title="Permalink to this heading">#</a></h4>
+<p><em><code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> es una alternativa al uso de los <code class="docutils literal notranslate"><span class="pre">if</span></code> anidados y la estructura <code class="docutils literal notranslate"><span class="pre">else</span></code>, este se activa como una condición alternativa si el resultado es falso en la condición inicial, esta funciona como un <code class="docutils literal notranslate"><span class="pre">else</span></code> pero iterativo y consecutivamente se cierra con <code class="docutils literal notranslate"><span class="pre">else</span></code>.</em></p>
+<p>Realizar un programa que le pregunte al usuario la cantidad de satelites que tiene Jupiter y valide e imprima un mensaje si ha acertado o no.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer String</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer variable</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;¿Cuantos satelites tiene Jupiter&quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Validar e imprimir mensaje</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">C</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">79</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Felicidades, has acertado la pregunta :)&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">C</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">79</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Lo siento pero no es la respuesta correcta :(&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>¿Cuantos satelites tiene Jupiter
+79
+Felicidades, has acertado la pregunta :)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-8">
+<h4>Ejemplo 8:<a class="headerlink" href="#ejemplo-8" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que ordene 3 números de mayor a menor. Lea los numeros por teclado.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Definir variables (numeros enteros)</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">n3</span><span class="p">;</span>
+
+<span class="c1">// Leer variables</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el primer numero: &quot;</span><span class="p">);</span>
+<span class="n">n1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el segundo numero: &quot;</span><span class="p">);</span>
+<span class="n">n2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el tercer numero: &quot;</span><span class="p">);</span>
+<span class="n">n3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Lógica:</span>
+<span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n1</span><span class="o">&gt;</span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">n2</span><span class="o">&gt;</span><span class="n">n3</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n1</span><span class="o">&gt;</span><span class="n">n3</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">n3</span><span class="o">&gt;</span><span class="n">n2</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n2</span><span class="o">&gt;</span><span class="n">n1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">n1</span><span class="o">&gt;</span><span class="n">n3</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n2</span><span class="o">&gt;</span><span class="n">n3</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">n3</span><span class="o">&gt;</span><span class="n">n1</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">n3</span><span class="o">&gt;</span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">n2</span><span class="o">&gt;</span><span class="n">n1</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El orden es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el primer numero: 3
+Ingrese el segundo numero: 3
+Ingrese el tercer numero: 3
+El orden es: 3, 3, 3
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-9">
+<h4>Ejemplo 9:<a class="headerlink" href="#ejemplo-9" title="Permalink to this heading">#</a></h4>
+<p>Realice un programa que pida al usuario una temperatura.</p>
+<ul class="simple">
+<li><p>Si la temperatura es mayor a <span class="math notranslate nohighlight">\(25\)</span>, imprima <code class="docutils literal notranslate"><span class="pre">&quot;A</span> <span class="pre">la</span> <span class="pre">playa!&quot;</span></code></p></li>
+<li><p>Si la temperatura es mayor a <span class="math notranslate nohighlight">\(15\)</span> y menor a <span class="math notranslate nohighlight">\(25\)</span>, imprima <code class="docutils literal notranslate"><span class="pre">&quot;A</span> <span class="pre">la</span> <span class="pre">montaña!&quot;</span></code></p></li>
+<li><p>Si la temperatura es menor a <span class="math notranslate nohighlight">\(5\)</span>, imprima <code class="docutils literal notranslate"><span class="pre">&quot;A</span> <span class="pre">esquiar!&quot;</span></code></p></li>
+</ul>
+<p>En caso contario, imprimir <code class="docutils literal notranslate"><span class="pre">&quot;A</span> <span class="pre">descansar...</span> <span class="pre">zZz&quot;</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer temperatura</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer temperatura</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese la temperatura&quot;</span><span class="p">);</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">temperatura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+
+<span class="c1">// Lógica</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperatura</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Si la temperatura es mayor que 25 ...</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A la playa!&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperatura</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// si es mayor que 15 y no es mayor que 25 ..</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A la montaña!&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">temperatura</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// si es menor que 5 y esta nevando y no es mayor que 15 ni mayor que 25</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A esquiar!&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// si la tempera  no es mayor que 25 ni que 15 ni menor que 5</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;A descansar... zZz&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese la temperatura
+30
+A la playa!
+A la montaña!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-10">
+<h4>Ejemplo 10:<a class="headerlink" href="#ejemplo-10" title="Permalink to this heading">#</a></h4>
+<p>Realice un programa que al introducir el Coeficiente Intelectual (IQ, por sus siglas en inglés) del usuario lo clasifique en Bajo, Medio, Normal o Alto.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer IQ</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">lectura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="w"> </span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer IQ</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Introduce el Coeficiente Intelectual. &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">iq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lectura</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Lógica</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iq</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">79</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;IQ Bajo&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iq</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">89</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">iq</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">79</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;IQ Medio&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iq</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">90</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">iq</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">110</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;IQ Normal&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iq</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">110</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;IQ Alto&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Introduce el Coeficiente Intelectual. 
+89
+IQ Medio
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-11">
+<h4>Ejemplo 11:<a class="headerlink" href="#ejemplo-11" title="Permalink to this heading">#</a></h4>
+<p>Realizar un programa que cuente los días que faltan para el fin de semana. Tenga en cuenta que:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Domingo = 1 (Fin de Semana)
+Lunes = 2
+Martes = 3
+Miercoles = 4
+Jueves = 5
+Viernes = 6
+Sabado = 7 (Fin de Semana)
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer dia de la semana</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer dia</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese el dia de la semana: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">dia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Variable para contar los dias que faltan</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">diasHastaFinSemana</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Lógica</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">dia</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">7</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">diasHastaFinSemana</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">           </span><span class="n">diasHastaFinSemana</span><span class="o">++</span><span class="p">;</span>
+<span class="w">           </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">diasHastaFinSemana</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">diasHastaFinSemana</span><span class="o">++</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Dias restantes hasta el fin de semana: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">diasHastaFinSemana</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dia</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">dia</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">7</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Fin de semana&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La semana solo tiene 7 dias&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ingrese el dia de la semana: 
+9
+La semana solo tiene 7 dias
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='3'></a></p>
+</section>
+</section>
+</section>
+<section id="ejemplos-switch-case">
+<h2>Ejemplos Switch Case<a class="headerlink" href="#ejemplos-switch-case" title="Permalink to this heading">#</a></h2>
+<section id="ejemplo-12">
+<h3>Ejemplo 12:<a class="headerlink" href="#ejemplo-12" title="Permalink to this heading">#</a></h3>
+<p>Realizar un programa que pida al usuario un tipo de vehiculo (<code class="docutils literal notranslate"><span class="pre">Carro</span></code>, <code class="docutils literal notranslate"><span class="pre">Camion</span></code>, <code class="docutils literal notranslate"><span class="pre">Moto</span></code>) y que imprima a que hora del dia puede circular dependiendo del tipo ingresado. Si el usuario ingresa un tipo de vehiculo distinto debe mostrar un mensaje indicando el error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Variable para leer el tipo de vehiculo</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">scn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer el vehiculo (String)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;En que vehiculo se desplaza (Carro/Camion/Moto)&quot;</span><span class="p">);</span>
+<span class="n">String</span><span class="w"> </span><span class="n">tipoVehiculo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scn</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="c1">// Lógica</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">tipoVehiculo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Carro&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Puedes pasar de 00:00 a 08:00&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Camion&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Puedes pasar de 08:00 a 16:00&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Moto&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Puedes pasar de 16:00 a 24:00&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No se puede pasar con un &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tipoVehiculo</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>En que vehiculo se desplaza (Carro/Camion/Moto)
+Carro
+Puedes pasar de 00:00 a 08:00
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-13">
+<h3>Ejemplo 13:<a class="headerlink" href="#ejemplo-13" title="Permalink to this heading">#</a></h3>
+<p>Realizar un programa que simule el juego “Piedra, Papel o Tijera”. El usuario debe ingresar <code class="docutils literal notranslate"><span class="pre">Piedra</span></code>, <code class="docutils literal notranslate"><span class="pre">Papel</span></code> o <code class="docutils literal notranslate"><span class="pre">Tijera</span></code>, y competirá con la computadora.</p>
+<p>El usuario debe ingresar un numero entero (<code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">Piedra</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">=</span> <span class="pre">Papel</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">=</span> <span class="pre">Tijera</span></code>) e imprimir uno de los tres posibles resultados (ganar, perder o empatar).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;----------- Piedra, Papel o Tijera -----------&quot;</span><span class="p">);</span>
+
+<span class="c1">// Math.random() genera un numero decimal al azar entre 0.0 y 1.0</span>
+<span class="c1">// la expresión (int) al inicio redondea el numero (lo convierte a entero)</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">seleccionCompu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable de tipo entero (1, 2 o 3) al azar</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La computadora ya escogió...&quot;</span><span class="p">);</span>
+
+<span class="c1">// Leer opción del usuario</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">teclado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese su opción [1=Piedra, 2=Papel, 3=Tijera]: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">seleccionUsuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Lógica</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La computadora habia escogido: &quot;</span><span class="p">);</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionCompu</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Piedra&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Empate!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Usted gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La computadora gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Su opción no es valida, vuelva a intentarlo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Papel&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La computadora gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Empate!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Usted gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Su opción no es valida, vuelva a intentarlo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Tijera&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">seleccionUsuario</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Usted gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La computadora gana!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Empate!&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="p">:</span>
+<span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Su opción no es valida, vuelva a intentarlo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----------- Piedra, Papel o Tijera -----------
+La computadora ya escogió...
+Ingrese su opción [1=Piedra, 2=Papel, 3=Tijera]: 
+2
+La computadora habia escogido: 
+Papel
+Empate!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplo-14">
+<h3>Ejemplo 14:<a class="headerlink" href="#ejemplo-14" title="Permalink to this heading">#</a></h3>
+<p>Hacer un programa que simule un cajero automático con un saldo inicial de <span class="math notranslate nohighlight">\(1000\)</span> dólares, con el siguiente menú de opciones:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Ingresar dinero a la cuenta.
+2. Retirar dinero de la cuenta.
+3. Salir.
+</pre></div>
+</div>
+<p>Para cada opción debe imprimir un mensaje. Si el saldo a retirar es mayor al que tiene en la cuenta tambien debe indicarlo en pantalla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Definir variables</span>
+<span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">opcion</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">ingreso</span><span class="p">,</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">,</span><span class="w"> </span><span class="n">retiro</span><span class="p">;</span>
+
+<span class="c1">// Mostrar menú</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;1. Ingresar dinero a la cuenta&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;2. Retirar dinero de la cuenta.&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;3. Salir.&quot;</span><span class="p">);</span>
+
+<span class="c1">// Variable de tipo Scanner para leer otras variables</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">entrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="c1">// Leer la opción (1, 2 o 3)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingresar la opción: &quot;</span><span class="p">);</span>
+<span class="n">opcion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="c1">// Lógica</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">opcion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Ingrese la cantidad que desea ingresar en la cuenta: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ingreso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+<span class="w">        </span><span class="n">saldoActual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ingreso</span><span class="p">;</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El saldo actual es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese la cantidad que desea retirar: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">retiro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">entrada</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">retiro</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">saldoActual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo_inicial</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">retiro</span><span class="p">;</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Dinero en la cuenta: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">saldoActual</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No cuenta con el saldo suficiente&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hasta luego...&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Opción no valida, intente de nuevo.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Ingresar dinero a la cuenta
+2. Retirar dinero de la cuenta.
+3. Salir.
+Ingresar la opción: 1
+Ingrese la cantidad que desea ingresar en la cuenta: 
+12300
+El saldo actual es: 13300.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><a name='4'></a></p>
+</section>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this heading">#</a></h2>
+<section id="ejercicio-1">
+<h3>Ejercicio 1:<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h3>
+<p>Realizar un programa que determine si un estudiante ha aprobado o no un examen. Para aprobar el examen, el estudiante debe obtener una calificación de al menos <span class="math notranslate nohighlight">\(60\)</span> en el examen escrito y una calificación de al menos <span class="math notranslate nohighlight">\(80\)</span> en el examen oral. Además, si la calificación total del examen (promedio de las calificaciones) es superior o igual a <span class="math notranslate nohighlight">\(90\)</span>, el estudiante recibe una mención honorífica.</p>
+<ul class="simple">
+<li><p><strong>Nota:</strong> Debe ingresar como minimo 4 estudiantes con su respectivas notas.</p></li>
+</ul>
+</section>
+<section id="ejercicio-2">
+<h3>Ejercicio 2:<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h3>
+<p>Tienes una tienda de ropa y deseas calcular el precio final de una compra de un cliente. La tienda ofrece un descuento del <span class="math notranslate nohighlight">\(10\%\)</span> en todas las compras que superen los <span class="math notranslate nohighlight">\(\$100\)</span>, y un descuento adicional del <span class="math notranslate nohighlight">\(5\%\)</span> si el cliente tiene una tarjeta de membresía de la tienda. Además, la tienda cobra una tarifa de envío de <span class="math notranslate nohighlight">\(\$5\)</span> para todas las compras que se envían por correo. Si el cliente gasta más de <span class="math notranslate nohighlight">\(\$200\)</span>, la tienda cubre el costo de envío.</p>
+</section>
+<section id="ejercicio-3">
+<h3>Ejercicio 3:<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h3>
+<p>Debes crear un programa de gestión de personal que almacena la información de los empleados en una base de datos. Cada empleado tiene un nombre, una edad, un salario y un cargo. La empresa tiene tres cargos diferentes: <code class="docutils literal notranslate"><span class="pre">&quot;gerente&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;supervisor&quot;</span></code> y <code class="docutils literal notranslate"><span class="pre">&quot;empleado&quot;</span></code>. El programa debe imprimir una carta para cada empleado, que depende de su cargo y su salario. Si el salario es mayor que <span class="math notranslate nohighlight">\(\$50000\)</span>, la carta debe ser de felicitación. Si el salario es menor o igual a <span class="math notranslate nohighlight">\(\$50000\)</span>, la carta debe ser de agradecimiento. La carta también debe mencionar el cargo del empleado.</p>
+<ul class="simple">
+<li><p><strong>Nota:</strong> Debe ingresar como minimo 5 empleados con sus respectivos datos.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "java"
+        },
+        kernelOptions: {
+            name: "java",
+            path: "./content\notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'java'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Unidad5.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">📘 Clase 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/clase-5/recursos-clase5.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">🧰 Recursos y Actividades</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-de-contenido">Tabla de Contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalar-java">Instalar Java</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias">Importar Librerias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-condicionales">Ejemplos Condicionales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-if">Ejemplos <code class="docutils literal notranslate"><span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-else">Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-5">Ejemplo 5:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-6">Ejemplo 6:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-else-if">Ejemplos <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-7">Ejemplo 7:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-8">Ejemplo 8:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-9">Ejemplo 9:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-10">Ejemplo 10:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-11">Ejemplo 11:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-switch-case">Ejemplos Switch Case</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-12">Ejemplo 12:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-13">Ejemplo 13:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-14">Ejemplo 14:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Joshua Bernal & Ricardo Ortega
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

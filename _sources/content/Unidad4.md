@@ -80,7 +80,7 @@ Puedes acceder a los notebooks en las siguiente páginas (*Strings y Entrada de 
 
 3. Pídele al usuario que ingrese un número y realiza las siguientes operaciones
     - **a.** Raíz
-    - **b.** Módulo
+    - **b.** Módulo de 3
     - **c.** Incrementar y disminuir en 1 su valor
     - **d.** Convertir a binario
 :::
