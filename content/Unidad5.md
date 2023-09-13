@@ -86,7 +86,8 @@ Escribe un programa que responda a un usuario que quiere comprar un helado en un
 - El topping de brownie cuesta $\$750$.
 - El topping de discos de chocolate cuesta $\$950$.
 - En caso de no disponer del topping solicitado por el usuario el programa escribirá por pantalla `No tenemos este topping, lo sentimos` y a continuación informar del precio del helado sin ningún topping.
-- Finalmente, el programa escribe por pantalla el precio del helado con el topping seleccionado (o ninguno).
+
+Finalmente, el programa escribe por pantalla el precio del helado con el topping seleccionado (o ninguno).
 
 :::
 
