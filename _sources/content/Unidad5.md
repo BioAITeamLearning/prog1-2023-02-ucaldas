@@ -78,15 +78,22 @@ Puedes acceder a los notebooks en las siguiente páginas (*Condicionales*)
 
 :::{grid-item}
 :columns: 9
-Un empleado de la tienda Tiki Taka realiza 3 ventas durante el día, se requiere saber cuál de ellas fue mayores a $\$1000$, cuál fue mayor a $\$500$ pero menores o iguales a $\$1000$, y cuál fue menor o igual a $\$500$. Además, se requiere saber el monto de lo vendido en cada categoría y de forma global.
+Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija.
 
-Nota. Los 3 montos no necesariamente tienen que pertenecer a uno de los grupos sino que pueden repetir grupo.
+- El helado sin topping cuesta $\$3.900$.
+- El topping de oreo cuesta $\$1.500$.
+- El topping de KitKat cuesta $\$1.000$.
+- El topping de brownie cuesta $\$750$.
+- El topping de discos de chocolate cuesta $\$950$.
+- En caso de no disponer del topping solicitado por el usuario el programa escribirá por pantalla `No tenemos este topping, lo sentimos` y a continuación informar del precio del helado sin ningún topping.
+
+Finalmente, el programa escribe por pantalla el precio del helado con el topping seleccionado (o ninguno).
 
 :::
 
 :::{grid-item}
 :columns: 3
-<img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-pipa.png" width="80" />
+<img src="https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/imgs/gato-1.png" width="80" />
 :::
 
 ::::
