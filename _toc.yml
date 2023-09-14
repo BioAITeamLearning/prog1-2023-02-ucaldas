@@ -36,4 +36,12 @@ parts:
     - file: content/resources/clase-5/recursos-clase5
     - file: content/talleres/taller5
     - file: content/quices/quiz4
+  - file: content/Unidad6
+    sections:
+    - file: content/notebooks/Clase6-Java
+    - file: content/notebooks/Clase6-Python
+    - file: content/resources/clase-6/recursos-clase6
+    - file: content/talleres/taller6_A
+    - file: content/talleres/taller6_B
+    - file: content/quices/quiz5
 
