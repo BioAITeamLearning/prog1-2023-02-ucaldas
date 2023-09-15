@@ -20,7 +20,7 @@ Reinel Tabares Soto
 :::{note}
 Este Taller debe entregarse en formato `docx`, con sus respectivas pruebas de escritorio y diagrama de flujo realizado a mano y subido en forma de foto (en caso de pedirse).
 
-Los notebooks de Colaboratory (tanto Java como Python) pueden estar adjuntos o como un enlace en el `.docx` con los permisos en público.
+Los notebooks de Colaboratory (tanto Java como Python) deben tener su respectivo enlace en el `.docx` con los permisos en público.
 :::
 
 ### Ejercicio 1
