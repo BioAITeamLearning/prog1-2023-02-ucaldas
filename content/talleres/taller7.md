@@ -18,9 +18,9 @@ Programación I
 Reinel Tabares Soto
 
 :::{note}
-Este Taller debe entregarse en Google Colab o programas .py o .java.
+Este taller puede entregarse en Google Colab (enlace en un `.docx` con los permisos en público) o en archivos `.py` o `.java`.
 
-Los notebooks de Colaboratory (tanto Java como Python) deben tener su respectivo enlace en un `.docx` con los permisos en público, en caso de no hacerse, no sera evaluado el taller.
+Si los notebooks de Colaboratory (tanto Java como Python) no tienen los permisos en público, no será evaluado el taller.
 :::
 
 ### Ejercicio 1
