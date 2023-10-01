@@ -24,7 +24,7 @@ Si los notebooks de Colaboratory (tanto Java como Python) no tienen los permisos
 :::
 
 ### Ejercicio 1
-Escribe un programa que calcule el $n-\'esimo$ número de Fibonacci, donde $n$ es un número ingresado por el usuario.
+Escribe un programa que calcule el $n-esimo$ número de Fibonacci, donde $n$ es un número ingresado por el usuario.
 
 ### Ejercicio 2
 Escribe un programa que genere un triángulo de Pascal de tamaño $n$, donde $n$ es un número ingresado por el usuario. El triángulo de Pascal se genera sumando los dos números inmediatamente superiores en la fila anterior para cada elemento.
