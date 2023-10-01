@@ -53,7 +53,7 @@ kernelspec:
 </div>
 
 :::{note}
-Puedes acceder a los notebooks en las siguiente páginas (*Ciclo For Java y Python*)
+Puedes acceder a los notebooks en las siguiente páginas (*Ciclo Repetitivo `for`- Java y Python*)
 :::
 
 ### Consejos para ser un mejor programador
@@ -86,7 +86,7 @@ Consejos para mejorar programando:
 
 
 :::{note}
-Puedes acceder a los notebooks en las siguiente páginas (*Ciclo For Java y Python*)
+Puedes acceder a los notebooks en las siguiente páginas (*Ciclo Repetitivo `for`- Java y Python*)
 :::
 
 ## Presentación Completa
