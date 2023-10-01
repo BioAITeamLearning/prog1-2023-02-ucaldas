@@ -12,14 +12,14 @@ kernelspec:
 
 # 📘 Clase 7
 
-## Estructuras de repetición-(ciclo foreach, While, do-while)
+## Estructuras de repetición (`foreach`, `While`, `do-while`)
 
 - Estructura `Foreach` para optimizar y abordar problemas más especificos
 - Estructura `While` y su diagrama de flujo
 - Estructura `Do-While` y `Ciclos anhidados`
 
 
-## Estructura `Foreach` para optimizar y abordar problemas más especificos
+## Estructura `foreach` para optimizar y abordar problemas más especificos
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
@@ -27,7 +27,7 @@ kernelspec:
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-7/Clase_7_parte1.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-## Estructura `While` y su diagrama de flujo
+## Estructura `while` y su diagrama de flujo
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
@@ -35,7 +35,7 @@ kernelspec:
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-7/Clase_7_parte2.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-## Estructura `Do-While` y `Ciclos anhidados` 
+## Estructura `do-while` y ciclos anidados
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
@@ -60,7 +60,7 @@ Existen muchas ramas de la Ingeniería de Sistemas y especializaciones, que perm
 
 Aquellos que quieren desarrollarse en este apasionante campo, puede optar por especialidades relacionadas con la salud, con la economía o hasta con la sociedad, debido a que el desarrollo tecnológico tiene diversas aplicaciones, no solo para el área de las telecomunicaciones.
 
-### Ramas de la Ingeniería en sistemas
+### Ramas de la Ingeniería en Sistemas
 
 A continuación te indicamos las ramas de la Ingeniería de Sistemas:
 
@@ -69,7 +69,7 @@ A continuación te indicamos las ramas de la Ingeniería de Sistemas:
 - Informática: domina todo lo referente a los computados, sistemas, datos y redes.
 - Sistemas: revisa sistemas, efectúa sistemas, maneja programas.
 
-Del mismo modo otras ramas de la Ingeniería de Sistemas son la economía,contabilidad, control de Inteligencia Artificial y reingeniería. Todas estas áreas permiten el desarrollo de diversas tecnologías en beneficio de la humanidad.
+Del mismo modo otras ramas de la Ingeniería de Sistemas son la economía, contabilidad, control de Inteligencia Artificial y reingeniería. Todas estas áreas permiten el desarrollo de diversas tecnologías en beneficio de la humanidad.
 
 ### ¿Cuales son las salidas laborales que se pueden tener?
 
@@ -83,7 +83,7 @@ Se debe tener en cuenta que las áreas de acción pueden ser muy variadas, debid
 
 Cualquiera de estas labores las puede desempeñar un ingeniero que se encuentre capacitado y comprometido con su profesión, además que es posible explorar otros campos si se realizan algunas especializaciones. 
 
-De hecho existen una infinidad de posibilidades, cada vez es más común encontrar tecnología en todo, por ello es común encontrar ingenieros en sistemas en diferentes ramas de otras disciplinas, en el área de la salud, biología, en geología, derecho, filosofía entre otras ramas, la tecnología informatica no pone limites a todo aquello que se te ocurra ¿Y tu?... `¿Te atreves a hacer algo diferente e ir más allá?`
+De hecho existen una infinidad de posibilidades, cada vez es más común encontrar tecnología en todo, por ello es común encontrar ingenieros en sistemas en diferentes ramas de otras disciplinas, en el área de la salud, biología, en geología, derecho, filosofía entre otras ramas, la tecnología informatica no pone limites a todo aquello que se te ocurra **¿Y tu?... ¿Te atreves a hacer algo diferente e ir más allá?**
 
 :::
 
@@ -97,7 +97,7 @@ De hecho existen una infinidad de posibilidades, cada vez es más común encontr
 
 
 :::{note}
-Puedes acceder a los notebooks en las siguiente páginas (*Ciclo Repetitivo `while`- Java*)
+Puedes acceder al notebook en la siguiente página (*Ciclos `while` y `do-while`*)
 :::
 
 ## Presentación Completa

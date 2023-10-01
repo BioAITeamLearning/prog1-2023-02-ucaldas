@@ -22,7 +22,7 @@ Evaluemos lo aprendido en la Clase 6
 :class-body: text-center
 :class-header: bg-light text-center
 :link: https://docs.google.com/forms/d/e/1FAIpQLSfzlitoQCh3OW0diuixxIT0DcfCiKRfBT8_iQCQMPrhzqoDGw/viewform?usp=sharing
-**💬 Quiz 6**
+**💬 Quiz 5**
 ^^^
 ```{image} https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png
 :height: 100

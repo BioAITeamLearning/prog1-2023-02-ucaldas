@@ -46,7 +46,7 @@ parts:
     - file: content/quices/quiz5
   - file: content/Unidad7
     sections:
-    - file: content/notebooks/Clase7_Java
+    - file: content/notebooks/Clase7-Java
     - file: content/talleres/taller7
     - file: content/quices/quiz6
 
