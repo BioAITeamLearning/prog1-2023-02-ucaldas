@@ -15,8 +15,8 @@ repository:
   branch: master
 
 html:
-  use_issues_button: true
-  use_repository_button: true
+  use_issues_button: false
+  use_repository_button: false
 
 launch_buttons:
   colab_url: "https://colab.research.google.com"
