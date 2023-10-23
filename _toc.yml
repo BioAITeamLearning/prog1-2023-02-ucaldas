@@ -57,5 +57,17 @@ parts:
     - file: content/resources/clase-8/recursos-clase8
     - file: content/talleres/taller8
     - file: content/quices/quiz7
+  - file: content/Unidad9
+    sections:
+    - file: content/notebooks/Clase9-Java
+    - file: content/notebooks/Clase9-Python
+    - file: content/resources/clase-9/recursos-clase9
+    - file: content/talleres/taller9
+    - file: content/quices/quiz8
+
+
+
+
+
 
 
