@@ -14,28 +14,43 @@ kernelspec:
 
 ## Arreglos
 
-- Introducción a arreglos (conceptos basicos, sintaxis y declaración)
-- Arreglos bidimensionales y ejemplos
+- Introducción y Conceptos basicos
+- Sintaxis y declaración
+- Arreglos bidimensionales
+- Ejemplos
 - Arreglos de tamaño dinamico
 - Bonus
 
-
-
-## Introducción a arreglos (conceptos basicos, sintaxis y declaración)
+## Introducción y Conceptos basicos
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9_arreglos_1.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-conceptos-basicos.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-## Arreglos bidimensionales y ejemplos
-
+## Sintaxis y declaración
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9_arreglos_2.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-sintaxis.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+## Arreglos bidimensionales
+
+<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
+    <p class="title">Click para ver Diapositivas</p>
+    Presentación
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-arreglos-bidimensionales.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+## Ejemplos
+
+<div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
+    <p class="title">Click para ver Diapositivas</p>
+    Presentación
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-ejemplos.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Arreglos de tamaño dinamico
@@ -43,18 +58,16 @@ kernelspec:
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9_arreglos_3.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-arreglos-dinamicos.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ## Bonus
 
-
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
     Presentación
-    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9_arreglos_4.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-9/clase9-bonus.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
-
 
 
 :::{note}

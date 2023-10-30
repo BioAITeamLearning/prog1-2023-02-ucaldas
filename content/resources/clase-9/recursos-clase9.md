@@ -14,9 +14,9 @@ kernelspec:
 
 ## Recursos
 
-:::{card} 🌐 Video corto sobre array en Java en 2 minutos.
+:::{card} 🎦 Arrays en Java en 2 minutos.
 
-<iframe width="790" height="490" src="https://www.youtube.com/embed/k24J92Hod50?si=qNTy_Qa-QsaZTTPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="730" height="450" src="https://www.youtube.com/embed/k24J92Hod50?si=qNTy_Qa-QsaZTTPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 :::
 
 :::{card} 🌐 Java arrays
