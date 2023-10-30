@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/talleres/taller6_B';</script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
@@ -219,6 +221,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../resources/clase-8/recursos-clase8.html">🧰 Recursos y Actividades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="taller8.html">📄 Taller 8</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../quices/quiz7.html">🔨 Quiz 7</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Unidad9.html">📘 Clase 9</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase9-Java.html">📙 Arrays - Java</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/Clase9-Python.html">📙 Arrays - Python</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../resources/clase-9/recursos-clase9.html">🧰 Recursos y Actividades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taller9.html">📄 Taller 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quices/quiz8.html">🔨 Quiz 8</a></li>
 </ul>
 </li>
 </ul>
@@ -455,20 +473,20 @@ document.write(`
 </div>
 <section id="ejercicio-1">
 <h3>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h3>
-<p>Construya un algoritmo que reciba como entrada un cierto valor n, y genere como salida n veces la frase “Las 6 lukas del bus se fueron en empanadas”.</p>
+<p>Construya un algoritmo que reciba como entrada un cierto valor <span class="math notranslate nohighlight">\(n\)</span>, y genere como salida <span class="math notranslate nohighlight">\(n\)</span> veces la frase <code class="docutils literal notranslate"><span class="pre">Las</span> <span class="pre">6</span> <span class="pre">lukas</span> <span class="pre">del</span> <span class="pre">bus</span> <span class="pre">se</span> <span class="pre">fueron</span> <span class="pre">en</span> <span class="pre">empanadas</span></code>.</p>
 <ul class="simple">
-<li><p>Debe mostrar n salidas</p></li>
-<li><p>Debe mostrar n veces la frase en una única salida</p></li>
-<li><p>Debe utilizar break; si n=2</p></li>
+<li><p>Debe mostrar <span class="math notranslate nohighlight">\(n\)</span> salidas</p></li>
+<li><p>Debe mostrar <span class="math notranslate nohighlight">\(n\)</span> veces la frase en una única salida</p></li>
+<li><p>Debe utilizar <code class="docutils literal notranslate"><span class="pre">break</span></code> si <span class="math notranslate nohighlight">\(n=2\)</span></p></li>
 </ul>
 </section>
 <section id="ejercicio-2">
 <h3>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h3>
-<p>Hacer un script que imprima los 20 primeros números primos y los 20 impares, sus cuadrados y calcular la multiplicación de los números pares e impares impresos.</p>
+<p>Hacer un script que imprima los <span class="math notranslate nohighlight">\(20\)</span> primeros números primos y los <span class="math notranslate nohighlight">\(20\)</span> impares, sus cuadrados y calcular la multiplicación de los números pares e impares impresos.</p>
 </section>
 <section id="ejercicio-3">
 <h3>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h3>
-<p>Realizar un script que pida n cantidad de números random e imprima el número mayor y el número menor.</p>
+<p>Realizar un script que pida <span class="math notranslate nohighlight">\(n\)</span> cantidad de números random e imprima el número mayor y el número menor.</p>
 </section>
 <section id="ejercicio-4">
 <h3>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this heading">#</a></h3>
@@ -476,18 +494,19 @@ document.write(`
 </section>
 <section id="ejercicio-5">
 <h3>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this heading">#</a></h3>
-<p>Escribir un script que lea un entero y un carácter. La salida debe ser un triángulo dibujado con el carácter dado y de anchura máxima dada por el entero leído. Por ejemplo su entero es 7 y el carácter es „O‟, el triángulo debe ser:</p>
-<p>0
-000
-00000
-0000000</p>
+<p>Escribir un script que lea un entero y un carácter. La salida debe ser un triángulo dibujado con el carácter dado y de anchura máxima dada por el entero leído.</p>
+<p>Por ejemplo su entero es <span class="math notranslate nohighlight">\(7\)</span> y el carácter es <code class="docutils literal notranslate"><span class="pre">0</span></code>, el triángulo debe ser:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    0
+   000
+  00000 
+ 0000000
+</pre></div>
+</div>
 </section>
 <section id="ejercicio-6">
 <h3>Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permalink to this heading">#</a></h3>
-<p>Escribe un programa que lea un número n y calcule su factorial (n!)</p>
-<ul class="simple">
-<li><p>pista(La función factorial es una fórmula matemática representada por el signo de exclamación «!». En la fórmula Factorial se deben multiplicar todos los números enteros y positivos que hay entre el número que aparece en la fórmula y el número 1)</p></li>
-</ul>
+<p>Escribe un programa que lea un número <span class="math notranslate nohighlight">\(n\)</span> y calcule su factorial (<span class="math notranslate nohighlight">\(n!\)</span>)</p>
+<p><strong>Pista:</strong> La función factorial es una fórmula matemática representada por el signo de exclamación «<span class="math notranslate nohighlight">\(!\)</span>». En la fórmula Factorial se deben multiplicar todos los números enteros y positivos que hay entre el número que aparece en la fórmula y el número <span class="math notranslate nohighlight">\(1\)</span>.</p>
 </section>
 <section id="ejercicio-7">
 <h3>Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permalink to this heading">#</a></h3>
@@ -495,8 +514,8 @@ document.write(`
 </section>
 <section id="ejercicio-8">
 <h3>Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permalink to this heading">#</a></h3>
-<p>La sucesión de Fibonacci es la siguiente: 1, 1, 2, 3, 5, 8, 13, 21, 34,…
-Es decir, f 1=1, f 2=1, y cada uno de los siguientes términos de la sucesión se calculan sumando los dos anteriores: f i= f i−1 + f i−2. Escribe un programa que genera dicha sucesión, presentando en pantalla cada uno de los términos. El programa terminará después de presentar un término mayor que un cierto límite (10000, por ejemplo).</p>
+<p>La sucesión de Fibonacci es la siguiente: <span class="math notranslate nohighlight">\(1, 1, 2, 3, 5, 8, 13, 21, 34, ...\)</span>
+Es decir, <span class="math notranslate nohighlight">\(f_1=1\)</span>, <span class="math notranslate nohighlight">\(f_2=1\)</span>, y cada uno de los siguientes términos de la sucesión se calculan sumando los dos anteriores: <span class="math notranslate nohighlight">\(f_i=f_{i−1} + f_{i−2}\)</span>. Escribe un programa que genera dicha sucesión, presentando en pantalla cada uno de los términos. El programa terminará después de presentar un término mayor que un cierto límite (<span class="math notranslate nohighlight">\(10.000\)</span>, por ejemplo).</p>
 </section>
 <section id="ejercicio-9">
 <h3>Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permalink to this heading">#</a></h3>
@@ -504,7 +523,7 @@ Es decir, f 1=1, f 2=1, y cada uno de los siguientes términos de la sucesión s
 </section>
 <section id="ejercicio-10">
 <h3>Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permalink to this heading">#</a></h3>
-<p>Hacer un programa que calcule la moda de una cantidad de números aleatorios si no hay moda que genere 3 más si la hay que muestre por teclado el siguiente mensaje (Debe haber otra forma de almacenar datos en vez de usar 50 variables).</p>
+<p>Hacer un programa que calcule la moda de una cantidad de números aleatorios si no hay moda que genere <span class="math notranslate nohighlight">\(3\)</span> más, si la hay que muestre por teclado el siguiente mensaje: <code class="docutils literal notranslate"><span class="pre">Debe</span> <span class="pre">haber</span> <span class="pre">otra</span> <span class="pre">forma</span> <span class="pre">de</span> <span class="pre">almacenar</span> <span class="pre">datos</span> <span class="pre">en</span> <span class="pre">vez</span> <span class="pre">de</span> <span class="pre">usar</span> <span class="pre">50</span> <span class="pre">variables</span></code>.</p>
 </section>
 <section id="ejercicio-11">
 <h3>Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Permalink to this heading">#</a></h3>
@@ -512,11 +531,12 @@ Es decir, f 1=1, f 2=1, y cada uno de los siguientes términos de la sucesión s
 </section>
 <section id="ejercicio-12">
 <h3>Ejercicio 12<a class="headerlink" href="#ejercicio-12" title="Permalink to this heading">#</a></h3>
-<p>Escribir un programa que permita al usuario ingresar dos años y luego imprima todos los años en ese rango, que sean bisiestos y múltiplos de 10. Nota: para que un año sea bisiesto debe ser divisible por 4 y no debe ser divisible por 100, excepto que también sea divisible por 400.</p>
+<p>Escribir un programa que permita al usuario ingresar dos años y luego imprima todos los años en ese rango, que sean bisiestos y múltiplos de <span class="math notranslate nohighlight">\(10\)</span>.</p>
+<p><strong>Nota:</strong> para que un año sea bisiesto debe ser divisible por <span class="math notranslate nohighlight">\(4\)</span> y no debe ser divisible por <span class="math notranslate nohighlight">\(100\)</span>, excepto que también sea divisible por <span class="math notranslate nohighlight">\(400\)</span>.</p>
 </section>
 <section id="ejercicio-13">
 <h3>Ejercicio 13<a class="headerlink" href="#ejercicio-13" title="Permalink to this heading">#</a></h3>
-<p>Realice un algoritmo que lea de un estudiante una cantidad de notas definidas por el estudiante, adicional el estudiante debe decir cual es la ponderación de cada nota, a partir de esto el algoritmo debe calcular la nota final, la mayor nota, la menor nota y si aprobó la materia tomando como escala notas de 0 a 5 y como nota aprobatoria un 3 o más.</p>
+<p>Realice un algoritmo que lea de un estudiante una cantidad de notas definidas por el estudiante, adicional el estudiante debe decir cual es la ponderación de cada nota, a partir de esto el algoritmo debe calcular la nota final, la mayor nota, la menor nota y si aprobó la materia tomando como escala notas de <span class="math notranslate nohighlight">\(0\)</span> a <span class="math notranslate nohighlight">\(5\)</span> y como nota aprobatoria un <span class="math notranslate nohighlight">\(3\)</span> o más.</p>
 </section>
 </section>
 </section>
