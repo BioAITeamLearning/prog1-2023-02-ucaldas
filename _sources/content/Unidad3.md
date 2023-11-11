@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 3
+# 📘 Operadores
 
 ## Tipos de operadores
 

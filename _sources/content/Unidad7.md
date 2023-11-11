@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 7
+# 📘 Estructura Repetitiva `while`
 
 ## Estructuras de repetición (`foreach`, `While`, `do-while`)
 

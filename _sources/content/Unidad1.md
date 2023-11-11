@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 1
+# 📘 Introducción
 
 ## Introducción a la Programación
 
