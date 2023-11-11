@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 4
+# 📘 Entrada/Salida de Variables
 
 ## Pruebas de Escritorio y Ejemplos
 

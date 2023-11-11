@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 2
+# 📘 Tipos de Datos
 
 ## Datos y Tipos de Datos
 

@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 6
+# 📘 Estructura Repetitiva `for`
 
 ## Estructuras de repetición-(ciclo For)
 
