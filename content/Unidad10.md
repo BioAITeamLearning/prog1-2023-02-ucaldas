@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# 📘 Clase 10
+# 📘 Matrices
 
 ## Matrices
 
