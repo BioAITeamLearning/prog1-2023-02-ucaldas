@@ -64,6 +64,11 @@ parts:
     - file: content/resources/clase-9/recursos-clase9
     - file: content/talleres/taller9
     - file: content/quices/quiz8
+  - file: content/Unidad10
+    sections:
+    - file: content/notebooks/Clase10-Python
+    - file: content/talleres/taller10
+    - file: content/quices/quiz9
 
 
 
