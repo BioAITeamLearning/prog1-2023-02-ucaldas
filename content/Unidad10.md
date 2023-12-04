@@ -14,14 +14,14 @@ kernelspec:
 
 ## Matrices
 
-- Introducción a Matrices (conceptos basicos)
+- Introducción a Matrices
 - Sintaxís y declaración
 - Ejemplos
-- Apliación sobre imágenes
+- Apliación sobre Imágenes
 
 
 
-## Introducción a Matrices (conceptos basicos)
+## Introducción a Matrices
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
@@ -46,7 +46,7 @@ kernelspec:
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-10/Clase10-parte3.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-## Ejemplos
+## Apliación sobre Imágenes
 
 <div class="admonition tip dropdown" style="background: lightgreen; padding: 10px">
     <p class="title">Click para ver Diapositivas</p>
@@ -54,10 +54,8 @@ kernelspec:
     <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://github.com/BioAITeamLearning/prog1-2023-02-ucaldas/raw/main/content/resources/clase-10/Clase10-parte4.pptx" frameborder="0" width="750" height="470" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-
-
 :::{note}
-Puedes acceder a los notebooks en las siguientes páginas (*Arreglos - Java, Arreglos - Python*)
+Puedes acceder a los notebooks en las siguientes páginas (*Matrices - Java, Matrices - Python*)
 :::
 
 ## Presentación Completa
