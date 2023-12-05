@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/talleres/taller10';</script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
@@ -438,7 +440,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arreglos">Arreglos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">Matrices</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
@@ -459,8 +461,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="taller-10">
 <h1>📄 Taller 10<a class="headerlink" href="#taller-10" title="Permalink to this heading">#</a></h1>
-<section id="arreglos">
-<h2>Arreglos<a class="headerlink" href="#arreglos" title="Permalink to this heading">#</a></h2>
+<section id="matrices">
+<h2>Matrices<a class="headerlink" href="#matrices" title="Permalink to this heading">#</a></h2>
 <p>Programación I</p>
 <p>Reinel Tabares Soto</p>
 <div class="admonition note">
@@ -470,7 +472,7 @@ document.write(`
 </div>
 <section id="ejercicio-1">
 <h3>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h3>
-<p>Realice un programa que dada una matriz de dimensiones mxn introducida por teclado, inserte ceros y unos aleatoriamente en dicha matriz, de forma que una vez llena, cuente cuantos 1 hay.</p>
+<p>Realice un programa que dada una matriz de dimensiones <span class="math notranslate nohighlight">\(m\times n\)</span> introducida por teclado, inserte ceros y unos aleatoriamente en dicha matriz, de forma que una vez llena, cuente la cantidad de unos (1’s).</p>
 </section>
 <section id="ejercicio-2">
 <h3>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h3>
@@ -480,24 +482,22 @@ document.write(`
 <h3>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h3>
 <p>Realice un programa que devuelva una matriz de números pares aleatorios. Debe crear una función que reciba como argumentos las dimensiones y el rango de los números aleatorios que se crearán.</p>
 <p>Forma de la Función:</p>
-<p>pares_Aleatorios( &lt;dimensión m&gt;,  &lt;dimensión n&gt;,&lt;rango mínimo&gt;, &lt;rango máximo&gt;)</p>
-<p>Nota. Utiliza Math.random() para crear los números aleatorios y limita su rango.
+<p><code class="docutils literal notranslate"><span class="pre">pares_Aleatorios(</span> <span class="pre">&lt;dimensión</span> <span class="pre">m&gt;,</span>&#160; <span class="pre">&lt;dimensión</span> <span class="pre">n&gt;,&lt;rango</span> <span class="pre">mínimo&gt;,</span> <span class="pre">&lt;rango</span> <span class="pre">máximo&gt;)</span></code></p>
+<p>Nota. Utiliza <code class="docutils literal notranslate"><span class="pre">Math.random()</span></code> para crear los números aleatorios y limita su rango.
 Pista. Puede ser útil el ciclo do-while.</p>
 </section>
 <section id="ejercicio-4">
 <h3>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permalink to this heading">#</a></h3>
-<p>Realice un programa que desplace x posiciones los elementos de una matriz de caracteres. El usuario debe ingresar los elementos (datos de tipo char) de la matriz, debe ser de dimensiones mxn, es decir, el usuario también debe ingresar la dimensión de la matriz.
-Debe validarse que la dimensión de la matriz sea mayor o igual 2x2.</p>
+<p>Realice un programa que desplace x posiciones los elementos de una matriz de caracteres. El usuario debe ingresar los elementos (datos de tipo char) de la matriz, debe ser de dimensiones <span class="math notranslate nohighlight">\(m\times n\)</span>, es decir, el usuario también debe ingresar la dimensión de la matriz.
+Debe validarse que la dimensión de la matriz sea mayor o igual <span class="math notranslate nohighlight">\(2\times2\)</span>.</p>
 </section>
 <section id="ejercicio-5">
 <h3>Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permalink to this heading">#</a></h3>
-<p>Realice un programa que permita ejecutar las siguientes operaciones entre matrices:
-Suma, Resta, Multiplicación por un escalar y multiplicación entre dos matrices.
-Para ello haga uso de funciones y un menú (se sugiere usar do while)</p>
-<p><a class="reference external" href="https://yosoytuprofe.20minutos.es/2017/06/04/operaciones-con-matrices/">Click para ir a la información operaciones con matrices</a> <span class="fas fa-arrow-right"></span></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
+<p>Realice un programa que permita ejecutar las siguientes operaciones entre matrices:</p>
+<ul class="simple">
+<li><p>Suma, Resta, Multiplicación por un escalar y multiplicación entre dos matrices. Para ello haga uso de funciones y un menú (se sugiere usar do while)</p></li>
+</ul>
+<p><a class="reference external" href="https://yosoytuprofe.20minutos.es/2017/06/04/operaciones-con-matrices/">Información operaciones con matrices</a> <span class="fas fa-arrow-right"></span></p>
 </section>
 </section>
 </section>
@@ -569,7 +569,7 @@ Para ello haga uso de funciones y un menú (se sugiere usar do while)</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arreglos">Arreglos</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">Matrices</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
