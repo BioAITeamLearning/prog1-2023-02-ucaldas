@@ -12,7 +12,7 @@ kernelspec:
 
 # 📄 Taller 10
 
-## Arreglos
+## Matrices
 Programación I
 
 Reinel Tabares Soto
@@ -24,7 +24,7 @@ Si el notebook no tiene los permisos en público, no será evaluado el taller.
 :::
 
 ### Ejercicio 1
-Realice un programa que dada una matriz de dimensiones mxn introducida por teclado, inserte ceros y unos aleatoriamente en dicha matriz, de forma que una vez llena, cuente cuantos 1 hay. 
+Realice un programa que dada una matriz de dimensiones $m\times n$ introducida por teclado, inserte ceros y unos aleatoriamente en dicha matriz, de forma que una vez llena, cuente la cantidad de unos (1's). 
 
 ### Ejercicio 2
 Realiza una función que reciba una matriz con números decimales y la forma de ordenarlos (ascendente o descendente). La función debe retornar una matriz ordenada, adicionalmente imprimir sus elementos y el promedio.
@@ -34,23 +34,21 @@ Realice un programa que devuelva una matriz de números pares aleatorios. Debe c
 
 Forma de la Función: 
 
-pares_Aleatorios( <dimensión m>,  <dimensión n>,<rango mínimo>, <rango máximo>)
+`pares_Aleatorios( <dimensión m>,  <dimensión n>,<rango mínimo>, <rango máximo>)`
 
-Nota. Utiliza Math.random() para crear los números aleatorios y limita su rango. 
+Nota. Utiliza `Math.random()` para crear los números aleatorios y limita su rango. 
 Pista. Puede ser útil el ciclo do-while.
 
 ### Ejercicio 4
-Realice un programa que desplace x posiciones los elementos de una matriz de caracteres. El usuario debe ingresar los elementos (datos de tipo char) de la matriz, debe ser de dimensiones mxn, es decir, el usuario también debe ingresar la dimensión de la matriz.
-Debe validarse que la dimensión de la matriz sea mayor o igual 2x2.
+Realice un programa que desplace x posiciones los elementos de una matriz de caracteres. El usuario debe ingresar los elementos (datos de tipo char) de la matriz, debe ser de dimensiones $m\times n$, es decir, el usuario también debe ingresar la dimensión de la matriz.
+Debe validarse que la dimensión de la matriz sea mayor o igual $2\times2$.
 
 
 ### Ejercicio 5
- Realice un programa que permita ejecutar las siguientes operaciones entre matrices:
-Suma, Resta, Multiplicación por un escalar y multiplicación entre dos matrices.
-Para ello haga uso de funciones y un menú (se sugiere usar do while)
-+++
-[Click para ir a la información operaciones con matrices](https://yosoytuprofe.20minutos.es/2017/06/04/operaciones-con-matrices/) {fas}`arrow-right`
-:::
+Realice un programa que permita ejecutar las siguientes operaciones entre matrices:
+- Suma, Resta, Multiplicación por un escalar y multiplicación entre dos matrices. Para ello haga uso de funciones y un menú (se sugiere usar do while)
+
+[Información operaciones con matrices](https://yosoytuprofe.20minutos.es/2017/06/04/operaciones-con-matrices/) {fas}`arrow-right`
 
 
 
